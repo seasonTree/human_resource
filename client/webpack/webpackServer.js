@@ -3,9 +3,7 @@ const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.dev.js');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-// const apiMocker = require('webpack-api-mocker');
 const path = require('path');
-// const mocker = require('../test/mocker/index');
 
 const app = new express();
 
@@ -13,12 +11,11 @@ const app = new express();
 
 //配置中间件
 app.use(express.static(path.resolve(__dirname, '../dist')))
-// app.use(express.static(path.resolve(__dirname, '../template')))
 
 //配置webpack中间件
 
-//注入socket监听文件变化，主页entry的名字
-webpackConfig.entry.manage = ['webpack-hot-middleware/client', ...webpackConfig.entry.manage];
+//注入socket监听文件变化
+webpackConfig.entry.app = ['webpack-hot-middleware/client', ...webpackConfig.entry.app];
 
 //加入hot replace
 webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
@@ -33,6 +30,6 @@ app.use(webpackDevMiddleware(compiler, {
 //hot replacement
 app.use(webpackHotMiddleware(compiler));
 
-app.listen(9333, () => {
-    console.log('listen at http://localhost:9333')
+app.listen(9444, () => {
+    console.log('list at http://localhost:9444')
 });

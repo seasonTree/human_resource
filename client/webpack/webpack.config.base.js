@@ -1,34 +1,16 @@
+//单个只有后台的版本
 const path = require('path');
+const fs = require('fs');
 const extractTextPlugin = require("extract-text-webpack-plugin");
 const vueLoaderPlugin = require('vue-loader/lib/plugin');
 const htmlPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-
-const fs = require('fs');
-
 const srcPath = path.resolve(__dirname, '../src');
 const outputPath = path.resolve(__dirname, '../dist');
-
-const mainPath = path.resolve(srcPath, './main');
-const managePath = path.resolve(srcPath, './manage');
-
-// const outputMainPath = path.resolve(outputPath, './main');
-
-let outputTemplatePath = path.resolve(__dirname, '../dist/template');
-
 const copyFile = require('copy-webpack-plugin');
-const serverConfig = require('../config/server_config');
-
-// const api_key = serverConfig.api_key;
-
-//发布环境使用
 const env = process.env.NODE_ENV;
+const resourcePrfix = '';
 
-const resourcePrfix = serverConfig.resourcePrfix;
-
-if (env == 'production') {
-    outputTemplatePath = path.resolve(__dirname, '../template');
-}
 
 //如果dist文件不存在就创建
 try {
@@ -36,10 +18,6 @@ try {
 } catch (error) {
     fs.mkdirSync(outputPath);
 }
-
-const crypto = require('crypto'),
-    md5 = crypto.createHash('md5'),
-    token = md5.update(serverConfig.appID + serverConfig.appSecret).digest('hex');
 
 //移除dist生成的path
 function rmGenFile(outputPath) {
@@ -65,95 +43,23 @@ rmGenFile(outputPath);
 
 //生成入文件
 let entry = {
-    'manage': ["@babel/polyfill", `${managePath}/index.js`],
+    'app': ["@babel/polyfill", `${srcPath}/index.js`],
 }
-
-// 暂时不使用，因为对外的没有处理
-// let htmlPlug = [];
-
-// function genEntey(entryPath, parent, outPath, prefix) {
-//     let files = fs.readdirSync(entryPath);
-
-//     files.forEach(item => {
-
-//         var fpath = path.resolve(entryPath, item),
-//             foutPath = path.resolve(outPath, item),
-//             fstat = fs.statSync(fpath);
-
-//         if (fstat.isDirectory()) {
-//             //如果dist文件不存在就创建
-//             try {
-//                 fs.statSync(foutPath);
-//             } catch (error) {
-//                 fs.mkdirSync(foutPath);
-//             }
-
-//             genEntey(fpath, parent + "/" + item, foutPath);
-
-//         } else if (/\.html$/.test(item)) {
-
-//             try { //检查js是否存在，不存在就会报错, 所以不存在的时候直接移动html
-
-//                 var jsItemName = path.join(
-//                     `${templateJSPath}`, `${parent}`, `${item}`).replace(/\.html$/, '.js')
-
-//                 // console.log(jsItemName);
-
-//                 fs.statSync(jsItemName);
-
-//                 var key = parent ?
-//                     parent + "/" + item.replace(/\.js$/, "") :
-//                     item.replace(/\.js$/, "");
-
-//                 //使用～分割，避免层次神
-//                 key = path.join(prefix, key.replace('/', '~').replace('.html', ''));
-
-//                 entry[key] = jsItemName;
-
-//                 htmlPlug.push(new htmlPlugin({
-//                     filename: `${foutPath}`,
-//                     template: `ejs-compiled-loader!${fpath}`,
-//                     inject: false,
-//                     excludeChunks: ['manage', 'runtime~manage'],
-//                     //加入公共模块vendor~main
-//                     chunks: ['vendor~main', `${key}`, `runtime~${key}`],
-//                     chunksSortMode: 'auto',
-//                 }));
-
-//             } catch {
-//                 htmlPlug.push(new htmlPlugin({
-//                     filename: `${foutPath}`,
-//                     template: `ejs-compiled-loader!${fpath}`,
-//                     inject: false,
-//                     // excludeChunks: ['manage', 'runtime~manage'],
-//                     chunks: [],
-//                     chunksSortMode: 'auto',
-//                 }));
-//             }
-
-//         }
-//     });
-// }
-
-// genEntey(templateEntryPath, "", templateOutPath, 'main');
-
-// //合并插件
-// plugins = plugins.concat(htmlPlug);
 
 let plugins = [
     new vueLoaderPlugin(),
 
     new webpack.DefinePlugin({
-        __secret: JSON.stringify(serverConfig.secret),
-        __apiPrefix: JSON.stringify(serverConfig.apiPrefix),
-        __token: JSON.stringify(token)
+        //设置全局的变量
+        // __token: JSON.stringify(token)
     }),
 
     new htmlPlugin({
-        filename: `${outputTemplatePath}/manage.html`,
-        template: `${managePath}/index.html`,
+        filename: `${outputPath}/index.html`,
+        template: `${srcPath}/index.html`,
         inject: 'body',
         chunksSortMode: 'auto',
+        minify: env == 'production'
     }),
 
     //不能写成common.css，打包的时候会缺少文件
@@ -178,7 +84,7 @@ let plugins = [
         //复制文件
         //favicon.ico
         {
-            from: `${managePath}/image/user_image.jpg`,
+            from: `${srcPath}/image/user_image.jpg`,
             to: `${outputPath}/image`,
             force: true,
         }
@@ -189,7 +95,7 @@ let plugins = [
         //复制文件
         //favicon.ico
         {
-            from: `${managePath}/image/empty.png`,
+            from: `${srcPath}/image/empty.png`,
             to: `${outputPath}/image`,
             force: true,
         }
@@ -199,7 +105,7 @@ let plugins = [
         //复制文件
         //favicon.ico
         {
-            from: `${managePath}/image/favicon.ico`,
+            from: `${srcPath}/image/favicon.ico`,
             to: `${outputPath}`,
             force: true,
         }
@@ -255,12 +161,10 @@ module.exports = {
         alias: {
             'vue': 'vue/dist/vue.js',
             '@src': `${srcPath}`,
-            '@main': `${mainPath}`,
-            '@manage': `${managePath}`,
-            '@magView': `${managePath}/view`,
-            '@magCss': `${managePath}/css`,
-            '@magComponent': `${managePath}/component`,
-            '@magCommon': `${managePath}/common`
+            '@view': `${srcPath}/view`,
+            '@css': `${srcPath}/css`,
+            '@component': `${srcPath}/component`,
+            '@common': `${srcPath}/common`
         }
     },
 

@@ -1,0 +1,104 @@
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-resizer {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background-clip: content-box;
+    border: solid 2px transparent;
+}
+
+/*滚动轨道*/
+
+::-webkit-scrollbar-track {
+    background-color: rgba(33, 37, 43, 0.26);
+}
+
+/*滚动条*/
+
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-color: rgba(33, 37, 43, 0.26);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5A6274;
+    border-width: 1px;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+//清除浮动
+.clearfix:after {
+    content: "";
+    display: table;
+    height: 0;
+    visibility: both;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE/7/6*/
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.clear-float{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    zoom: 1
+}
+
+.clearfix::after {
+    .clear-float;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@import url("./font-awesome.min.css");
+// .fa-icon-font {
+//     display: inline-block;
+//     font: normal normal 900 14px/1 "Font Awesome 5 Free" !important;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     text-rendering: auto;
+//     line-height: 1;
+// }
+// [class^="el-icon-fa"],
+// [class*=" el-icon-fa"] {
+//     .fa-icon-font;
+// }
+//使用方法
+// el-icon-fa fa-user; btton使用
+// fa fa-user 普通使用

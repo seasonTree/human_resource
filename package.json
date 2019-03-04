@@ -1,24 +1,24 @@
 {
-	"name": "human_resoruce",
+	"name": "human_resource",
 	"version": "1.0.0",
-	"description": "人事管理系统",
+	"description": "human_resource",
 	"main": "index.js",
 	"scripts": {
-		"dev-not-watch": "node ./node_modules/webpack/bin/webpack.js --config ./webpack/webpack.config.dev.js",
-		"dev": "node ./node_modules/webpack/bin/webpack.js --watch --config ./webpack/webpack.config.dev.js",
-		"build-project": "cross-env NODE_ENV=production node ./node_modules/webpack/bin/webpack.js --config ./webpack/webpack.config.pro.js",
-		"dev-server": "cross-env NODE_ENV=development node ./webpack/webpackServer.js",
+		"dev-not-watch": "node ./node_modules/webpack/bin/webpack.js --config ./client/webpack/webpack.config.dev.js",
+		"dev": "node ./node_modules/webpack/bin/webpack.js --watch --config ./client/webpack/webpack.config.dev.js",
+		"build-project": "cross-env NODE_ENV=production node ./node_modules/webpack/bin/webpack.js --config ./client/webpack/webpack.config.pro.js",
+		"dev-server": "cross-env NODE_ENV=development node ./client/webpack/webpackServer.js",
 		"start": "node ./node_modules/concurrently/src/main.js \"npm run dev-server\"",
 		"build": "npm install && npm run build-project"
 	},
 	"dependencies": {
 		"@babel/polyfill": "^7.2.5",
 		"axios": "^0.18.0",
+		"echarts": "^4.2.0-rc.2",
 		"element-ui": "^2.4.11",
-		"nunjucks": "^3.1.7",
-		"qs": "^6.6.0",
 		"request": "^2.88.0",
 		"request-promise": "^4.2.2",
+		"v-charts": "^1.19.0",
 		"vue": "^2.5.21",
 		"vue-router": "^3.0.2",
 		"vuex": "^3.0.1"
