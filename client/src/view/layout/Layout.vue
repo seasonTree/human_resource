@@ -397,7 +397,7 @@ export default {
                     // that.$router.replace("/login");
                 })
                 .catch(res => {
-                    that.$message.error("Logout failed, please try again.");
+                    that.$message.error("退出登录失败，请重试.");
                 });
         }
     }
