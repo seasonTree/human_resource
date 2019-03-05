@@ -14,7 +14,7 @@ export default {
             tdata: [],
             reportData: [],
             pager: {
-                total: 1,
+                total: 0,
                 current: 1,
                 size: 10
             },
@@ -25,8 +25,7 @@ export default {
         };
     },
 
-    computed: {
-    },
+    computed: {},
 
     watch: {
         bodyHeight(newValue, oldValue) {
@@ -45,7 +44,7 @@ export default {
     methods: {
         resizeTable() {
             let that = this,
-                height = that.bodyHeight - 168;
+                height = that.bodyHeight - 148;
 
             if (that.$refs.search) {
                 height -= that.$refs.search.offsetHeight;
@@ -71,7 +70,7 @@ export default {
             that.$api[that.apiType]
                 .get(params)
                 .then(res => {
-                    if (res.code == 200) {
+                    if (res.code == 0) {
                         that.reportData = res.data;
 
                         if (that.pager) {
@@ -107,6 +106,18 @@ export default {
                     that.pager.size * (index - 1),
                     that.pager.size * (index - 1) + that.pager.size
                 );
+            }
+        },
+
+        pageSizeChange(val) {
+            let that = this;
+
+            if (that.pager) {
+                that.pager.size = val;
+
+                if(that.tdata.length){
+                    that.changePage(1);
+                }
             }
         }
     }

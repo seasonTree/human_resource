@@ -4,9 +4,9 @@ import {
 } from 'element-ui';
 
 const instance = axios.create({
-    baseURL: __apiPrefix, // api的base_url
+    baseURL: '', // api的base_url
     timeout: 6000, // 请求超时时间
-    withCredentials: true, //允许携带cookie
+    // withCredentials: true, //允许携带cookie
 })
 
 // request拦截器

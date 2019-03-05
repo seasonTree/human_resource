@@ -133,101 +133,6 @@
             :avatar="userInfo.avatar"
         ></user-image>
     </el-container>
-
-    <!-- <el-container>
-        <el-header class="header clearfix">
-            <div
-                class="inline-block title"
-                :style="{
-                width: navWidth
-            }"
-            >
-                ECommerce
-            </div>
-            <div class="pull-left">
-
-            </div>
-
-            <div class="pull-right">
-                <el-dropdown class="dropdown-link">
-                    <span>
-                        <span
-                            @click="userImageDialog = true"
-                            class="inline-block bg-cover user-image"
-                            :style="{
-                                backgroundImage: `url(${userInfo.avatar})`
-                            }"
-                        ></span>
-                        <span class="inline-block">{{userInfo.uname}}</span>
-                    </span>
-                    <el-dropdown-menu slot="dropdown">
-                        <el-dropdown-item @click.native="changePasswordDialog = true">
-                            修改密码
-                        </el-dropdown-item>
-                        <el-dropdown-item @click.native="logout">
-                            退出登录
-                        </el-dropdown-item>
-                    </el-dropdown-menu>
-                </el-dropdown>
-            </div>
-
-        </el-header>
-        <el-container class="content">
-            <el-aside
-                class="navbar"
-                :width="asideWidth"
-            >
-                <el-menu
-                    :default-active="$route.path"
-                    background-color="#eff1f6"
-                    router
-                >
-                    <menu-tree :menu="menu"></menu-tree>
-                </el-menu>
-            </el-aside>
-
-            <el-main class="main">
-                <div class="main-header">
-                    <el-breadcrumb separator="/">
-
-                        <template v-for="(item, index) in $route.meta.paths">
-                            <template v-if="item.url">
-                                <el-breadcrumb-item :key="index">{{item.name}}</el-breadcrumb-item>
-                            </template>
-
-                            <template v-else>
-                                <el-breadcrumb-item :key="index">{{item.name}}</el-breadcrumb-item>
-                            </template>
-
-                        </template>
-
-                        <el-breadcrumb-item>{{$route.meta.name}}</el-breadcrumb-item>
-                    </el-breadcrumb>
-                </div>
-
-                <div
-                    class="main-body"
-                    ref="mainBody"
-                >
-                    <transition
-                        name="fade"
-                        mode="out-in"
-                    >
-                        <router-view :bodyHeight="bodyHeight"></router-view>
-                    </transition>
-                </div>
-            </el-main>
-        </el-container>
-
-        <change-password :show.sync="changePasswordDialog">
-        </change-password>
-
-        <user-image
-            :show.sync="userImageDialog"
-            :avatar="userInfo.avatar"
-        ></user-image>
-
-    </el-container> -->
 </template>
 
 <script>
@@ -425,7 +330,6 @@ export default {
 @header-color: #7266ba;
 @title-color: #6453ca;
 @nav-color: #eff1f6;
-// @left-width: 280px;
 
 .content {
     position: absolute;
@@ -464,7 +368,6 @@ export default {
         }
 
         .user-image {
-            // background-image: url(../../image/user_image.jpg);
             height: 40px;
             width: 40px;
             vertical-align: middle;
@@ -539,43 +442,12 @@ export default {
                 bottom: 0px;
             }
         }
-
-        // padding: 0;
-        // position: relative;
-
-        // .main-header,
-        // .main-body,
-        // .main-footer {
-        //     padding: 20px;
-        //     position: absolute;
-        //     left: 0;
-        //     right: 0;
-        // }
-
-        // .main-header {
-        //     background-color: #f7f7f7;
-        //     border-bottom: 1px solid #dcdfe6;
-        // }
-
-        // .main-footer {
-        //     padding: 0;
-        //     bottom: 0;
-        //     line-height: 40px;
-        //     height: 40px !important;
-        //     text-align: center;
-        //     background-color: #dcdfe6;
-        // }
     }
-
-    // .aside-collapse {
-    //     width: 60px !important;
-    // }
 
     .aside {
         position: relative;
         overflow-x: hidden;
         transition: all 0.3s ease;
-        // width: @left-width;
 
         .navbar {
             position: absolute;
