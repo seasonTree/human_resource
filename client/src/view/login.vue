@@ -2,10 +2,10 @@
     <div class="login-container">
 
         <el-form ref="form" :model="form" class="login-form">
-            <div class="login-title">ECommerce</div>
-            <el-input v-model.trim="form.username" placeholder="Please enter Username" auto-complete="off"></el-input>
-            <el-input @keyup.native.enter="submitHandler" v-model.trim="form.password" type="password" placeholder="Please enter your password" autocomplete="off"></el-input>
-            <el-button type="primary" :loading="loading" @click="submitHandler">Login</el-button>
+            <div class="login-title">人事管理系统</div>
+            <el-input v-model.trim="form.username" placeholder="请输入用户名" auto-complete="off"></el-input>
+            <el-input @keyup.native.enter="submitHandler" v-model.trim="form.password" type="password" placeholder="请输入用户密码" autocomplete="off"></el-input>
+            <el-button type="primary" :loading="loading" @click="submitHandler">登录</el-button>
         </el-form>
     </div>
 </template>
@@ -30,12 +30,12 @@ export default {
             let that = this;
 
             if (!that.form.username) {
-                this.$message.error("Please enter Username.");
+                this.$message.error("请输入用户名.");
                 return;
             }
 
             if (!that.form.password) {
-                this.$message.error("Please enter password.");
+                this.$message.error("请输入密码.");
                 return;
             }
 
@@ -44,9 +44,9 @@ export default {
             that.$api.user
                 .login(that.form)
                 .then(res => {
-                    if (res.code == 200) {
+                    if (res.code == 0) {
                         this.$message({
-                            message: "Login successful",
+                            message: "登录成功",
                             type: "success",
                             duration: 800
                         });
@@ -66,12 +66,12 @@ export default {
                         }, 1200);
 
                     } else {
-                        that.$message.error(res.message || "User or password error. Please try again.");
+                        that.$message.error(res.msg || "用户或密码错误,请重试.");
                         that.loading = false;
                     }
                 })
                 .catch(res => {
-                    that.$message.error("User or password error. Please try again.");
+                    that.$message.error("用户或密码错误,请重试.");
                     that.loading = false;
                 });
         }
@@ -79,7 +79,6 @@ export default {
 };
 </script>
 <style lang='less'>
-// @color: #12afe3;
 @color: #7266ba;
 .login-container {
     position: absolute;

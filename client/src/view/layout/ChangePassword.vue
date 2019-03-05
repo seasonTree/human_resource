@@ -1,6 +1,6 @@
 <template>
     <el-dialog
-        title="Change password"
+        title="修改密码"
         :visible.sync="show"
         :before-close="closeDialog"
         class="custom-dialog"
@@ -14,36 +14,36 @@
             :rules="rules"
         >
             <el-form-item
-                label="Old password"
+                label="旧密码"
                 prop="oldPass"
             >
                 <el-input
                     v-model="changePwd.oldPass"
                     type="password"
                     autocomplete="off"
-                    placeholder="Please enter your password"
+                    placeholder="请输入密码"
                 ></el-input>
             </el-form-item>
             <el-form-item
-                label="New password"
+                label="新密码"
                 prop="newPass"
             >
                 <el-input
                     v-model="changePwd.newPass"
                     type="password"
                     autocomplete="off"
-                    placeholder="Please enter a new password"
+                    placeholder="请输入新密码"
                 ></el-input>
             </el-form-item>
             <el-form-item
-                label="Confirm password"
+                label="确认密码"
                 prop="newPassRe"
             >
                 <el-input
                     v-model="changePwd.newPassRe"
                     type="password"
                     autocomplete="off"
-                    placeholder="Please enter your new password again"
+                    placeholder="请再次输入新密码"
                 ></el-input>
             </el-form-item>
         </el-form>
@@ -51,12 +51,12 @@
             slot="footer"
             class="dialog-footer"
         >
-            <el-button @click="closeDialog">Close</el-button>
+            <el-button @click="closeDialog">取 消</el-button>
             <el-button
                 :loading="commitLoading"
                 type="primary"
                 @click="changePassword"
-            >Update</el-button>
+            >确 定</el-button>
         </div>
     </el-dialog>
 </template>
@@ -65,13 +65,13 @@
 let passRules = [
     {
         required: true,
-        message: "Please fill in the required password",
+        message: "请填写所需要的密码",
         trigger: "blur"
     },
     {
         min: 6,
         // max: 16,
-        message: "The length is at least 6 characters",
+        message: "长度在最小在6个字符",
         trigger: "blur"
     }
 ];
@@ -99,7 +99,7 @@ export default {
 
                         if (that.changePwd.newPass !== value) {
                             callback(
-                                new Error("The passwords do not match, Please re-enter them")
+                                new Error("两次的密码不一致，请重新输入.")
                             );
                         } else {
                             callback();
@@ -123,9 +123,9 @@ export default {
                     that.$api.user
                         .changePassword(that.changePwd)
                         .then(res => {
-                            if (res.code == 200) {
+                            if (res.code == 0) {
                                 that.$message({
-                                    message: "Modify the success.",
+                                    message: "修改成功.",
                                     type: "success",
                                     duration: 800
                                 });
@@ -138,7 +138,7 @@ export default {
                             that.commitLoading = false;
                         })
                         .catch(res => {
-                            that.$message.error("The modification failed. Please try again.");
+                            that.$message.error("修改失败，请重试.");
                             that.commitLoading = false;
                         });
                 }

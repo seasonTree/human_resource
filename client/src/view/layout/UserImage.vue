@@ -1,6 +1,6 @@
 <template>
     <el-dialog
-        title="Modify the picture"
+        title="修改头像"
         :visible.sync="show"
         :before-close="closeDialog"
         class="custom-dialog"
@@ -19,7 +19,7 @@
                 :imageHeight="300"
                 :diameter='150'
                 :imageUrl="image"
-                defaultBackImage="/image/empty.png"
+                defaultBackImage="./image/empty.png"
                 :defaultCutImage="userImage"
                 ref="cutImage"
             ></cut-image>
@@ -36,15 +36,15 @@
                 accept="image/*"
                 :auto-upload="false"
             >
-                <el-button type="success">Upload new pictures</el-button>
+                <el-button type="success">上传新图片</el-button>
             </el-upload>
 
-            <el-button @click="closeDialog">Close</el-button>
+            <el-button @click="closeDialog">取 消</el-button>
             <el-button
                 :loading="commitLoading"
                 type="primary"
                 @click="uploadUserImage"
-            >Update</el-button>
+            >确 定</el-button>
         </div>
 
     </el-dialog>
@@ -111,9 +111,9 @@ export default {
             that.$api.user
                 .updateUserAvatar(data)
                 .then(res => {
-                    if (res.code == 200) {
+                    if (res.code == 0) {
                         that.$message({
-                            message: "update Head portrait successful.",
+                            message: "更新头像成功.",
                             type: "success",
                             duration: 800
                         });
@@ -128,7 +128,7 @@ export default {
                     that.commitLoading = false;
                 })
                 .catch(res => {
-                    that.$message.error("The modification failed, Please try again.");
+                    that.$message.error("修改失败，请重试.");
                     that.commitLoading = false;
                 });
         },

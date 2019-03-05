@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        Welcome {{userInfo.userid}} .
+        欢迎 {{userInfo.userid}} .
 
     </div>
 </template>
@@ -30,12 +30,12 @@ export default {
                     if (res.code == 200) {
                     } else {
                         that.$message.error(
-                            res.message || "Failed to get the data, please refresh and try again."
+                            res.message || "获取数据失败，请刷新后重试."
                         );
                     }
                 })
                 .catch(res => {
-                    that.$message.error("Failed to get the data, please refresh and try again.");
+                    that.$message.error("获取数据失败，请刷新后重试.");
                 });
         }
     }

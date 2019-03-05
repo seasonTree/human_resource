@@ -1,7 +1,5 @@
 <template>
     <el-container class="content">
-
-        <!-- :class="{ 'aside-collapse': !showNav }" -->
         <div
             class="aside"
             :style="{
@@ -14,14 +12,14 @@
                         class="header title"
                         v-show="showNav"
                     >
-                        ECommerce
+                        招聘管理系统
                     </el-header>
 
                     <el-header
                         class="header title small-title"
                         v-show="!showNav"
                     >
-                        EC
+                        招
                     </el-header>
 
                     <div class="navbar">
@@ -70,10 +68,10 @@
                             </span>
                             <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item @click.native="changePasswordDialog = true">
-                                    Change Password
+                                    修改密码
                                 </el-dropdown-item>
                                 <el-dropdown-item @click.native="logout">
-                                    Log Out
+                                    退出登录
                                 </el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
@@ -125,6 +123,85 @@
             </el-main>
         </el-container>
 
+        <!-- <el-header class="header clearfix">
+            <div class="inline-block title">
+                招聘管理系统
+            </div>
+            <div class="pull-left">
+
+            </div>
+
+            <div class="pull-right">
+                <el-dropdown class="dropdown-link">
+                    <span>
+                        <span
+                            @click="userImageDialog = true"
+                            class="inline-block bg-cover user-image"
+                            :style="{
+                                backgroundImage: `url(${userInfo.avatar})`
+                            }"
+                        ></span>
+                        <span class="inline-block">{{userInfo.uname}}</span>
+                    </span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item @click.native="changePasswordDialog = true">
+                            修改密码
+                        </el-dropdown-item>
+                        <el-dropdown-item @click.native="logout">
+                            退出登录
+                        </el-dropdown-item>
+                    </el-dropdown-menu>
+                </el-dropdown>
+            </div>
+
+        </el-header>
+        <el-container class="content">
+            <el-aside
+                width="200px"
+                class="navbar"
+            >
+                <el-menu
+                    :default-active="$route.path"
+                    background-color="#eff1f6"
+                    router
+                >
+                    <menu-tree :menu="menu"></menu-tree>
+                </el-menu>
+            </el-aside>
+
+            <el-main class="main">
+                <div class="main-header">
+                    <el-breadcrumb separator="/">
+
+                        <template v-for="(item, index) in $route.meta.paths">
+                            <template v-if="item.url">
+                                <el-breadcrumb-item :key="index">{{item.name}}</el-breadcrumb-item>
+                            </template>
+
+                            <template v-else>
+                                <el-breadcrumb-item :key="index">{{item.name}}</el-breadcrumb-item>
+                            </template>
+
+                        </template>
+
+                        <el-breadcrumb-item>{{$route.meta.name}}</el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+
+                <div
+                    class="main-body"
+                    ref="mainBody"
+                >
+                    <transition
+                        name="fade"
+                        mode="out-in"
+                    >
+                        <router-view :bodyHeight="bodyHeight"></router-view>
+                    </transition>
+                </div>
+            </el-main>
+        </el-container> -->
+
         <change-password :show.sync="changePasswordDialog">
         </change-password>
 
@@ -132,6 +209,7 @@
             :show.sync="userImageDialog"
             :avatar="userInfo.avatar"
         ></user-image>
+
     </el-container>
 </template>
 
@@ -217,7 +295,7 @@ export default {
 
             userImageDialog: false,
 
-            navWidth: "280px",
+            navWidth: "200px",
             showNav: true
         };
     },
@@ -299,7 +377,7 @@ export default {
             if (that.showNav) {
                 //右侧拉开的时候加个延迟，避免加载闪动
                 setTimeout(() => {
-                    that.navWidth = "280px";
+                    that.navWidth = "200px";
                 }, 140);
             } else {
                 that.navWidth = "64px";
