@@ -1,0 +1,436 @@
+---------------------------------------------------------------
+[ 2019-03-08T10:04:27+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552010667056
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:04:28+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1552010667411
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:04:29+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1552010669443
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( 1=1 ) ORDER BY `id` LIMIT 0,10 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` WHERE  ( 1=1 ) LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:04:30+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552010670637
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T10:06:32+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1552010792534
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:06:36+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552010796083
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T10:39:39+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552012779169
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:39:48+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552012788188
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-08T10:39:48+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552012788448
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T10:39:50+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552012790384
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:02:12+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552014131930
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:02:12+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552014132224
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T11:02:14+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552014134664
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:02:19+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [8]未定义变量: perg
+---------------------------------------------------------------
+[ 2019-03-08T11:09:01+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552014541887
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:09:02+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552014542186
+[ error ] [0]语法解析错误: syntax error, unexpected ';'
+---------------------------------------------------------------
+[ 2019-03-08T11:09:03+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552014543767
+[ error ] [0]语法解析错误: syntax error, unexpected ';'
+---------------------------------------------------------------
+[ 2019-03-08T11:09:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [0]语法解析错误: syntax error, unexpected ';'
+---------------------------------------------------------------
+[ 2019-03-08T11:12:53+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [0]语法解析错误: syntax error, unexpected ';'
+---------------------------------------------------------------
+[ 2019-03-08T11:52:25+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552017145833
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:55:45+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?_d=1552017345761
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` IS NULL ORDER BY `mfy_time` DESC [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:55:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ error ] [8]未定义数组索引: name
+---------------------------------------------------------------
+[ 2019-03-08T11:56:01+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552017361682
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:56:28+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=123&_d=1552017388421
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '123' ORDER BY `mfy_time` DESC [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:56:28+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '123'  AND `phone` = '33'  AND `email` = '13' LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`graduation_time` , `school` , `speciality` , `educational` , `educational_background` , `certificate` , `skillExpertise` , `name` , `phone` , `work_year` , `source` , `expected_job` , `email` , `ct_user`) VALUES ('2018' , '湖南长沙理工学院' , '工商管理' , '本科' , '2016.01-2018.12  湖南长沙理工学院  工商管理  本科
+2007.09-2010.08  襄樊学院  电子信息科学与技术  大专
+' , ' ' , ' ' , '123' , '33' , '22' , '前程无忧' , 'HTML5' , '13' , 'admin') [ RunTime:0.032002s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:56:33+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6848&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6848 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:56:51+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6848 [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6848 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:59:37+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1552017576058
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) [ RunTime:0.038002s ]
+---------------------------------------------------------------
+[ 2019-03-08T11:59:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552017580297
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T13:56:44+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552024604215
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:57:00+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=1&_d=1552024620697
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '1' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:57:06+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=444&_d=1552024626104
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '444' ORDER BY `mfy_time` DESC [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:57:06+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '444'  AND `phone` = '1'  AND `email` = '1' LIMIT 1 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `age` , `sex` , `birthday` , `expected_money` , `phone` , `native_place` , `work_year` , `english` , `status` , `email` , `expected_job` , `source` , `graduation_time` , `projectExperience` , `educational` , `speciality` , `expected_address` , `school` , `educational_background` , `nearest_unit` , `nearest_job` , `skillExpertise` , `selfEvaluation` , `certificate` , `workExperience` , `custom1` , `custom2` , `custom3` , `ct_user`) VALUES ('444' , '' , '' , '' , '' , '1' , '' , '1' , '' , '' , '1' , 'Hybrid' , '前程无忧' , '1' , '' , '初中' , '' , '' , '1' , '2015/9 -- 2018/6	  江西青年职业学院	软件工程   大专' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'admin') [ RunTime:0.033001s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:57:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:57:44+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:58:06+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6849&_d=1552024685889
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083005s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.309017s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.046003s ]
+---------------------------------------------------------------
+[ 2019-03-08T13:58:43+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:02:30+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:03:17+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6849&_d=1552024997646
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:04:06+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:04:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:07:06+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:12:37+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.033002s ]
+---------------------------------------------------------------
+[ 2019-03-08T14:13:19+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6849&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.903052s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6849 LIMIT 1 [ RunTime:0.034002s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:16:43+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:17:13+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:17:26+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029446admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029446admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029446admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029446admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029446admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029446admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029446admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029446admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029446admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029446admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.005000s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 3
+---------------------------------------------------------------
+[ 2019-03-08T15:20:43+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029642admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029642admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029642admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029642admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029642admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029642admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029642admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029642admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029642admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029642admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:21:18+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029678admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029678admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029678admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029678admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029678admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029678admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029678admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029678admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029678admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029678admin' ORDER BY `id` ASC [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.008000s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 3
+---------------------------------------------------------------
+[ 2019-03-08T15:24:30+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029869admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029869admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029869admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029869admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029869admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029869admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029869admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029869admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029869admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029869admin' ORDER BY `id` ASC [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_communicate` (`ct_user` , `communicate_time` , `content` , `resume_id` , `screen` , `arrange_interview` , `arrive` , `approved_interview` , `entry`) VALUES ( '吴梦','2018.01.01','沟通内容1',6877,1,0,0,0,1 ) , ( '吴梦','2018.01.01','沟通内容2',6878,1,1,1,1,1 ) , ( '吴梦','2018.01.01','沟通内容3',6879,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容33',6879,0,0,0,0,1 ) , ( '吴梦','2018.01.01','沟通内容4',6880,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容44',6880,0,0,0,1,0 ) , ( '吴梦','2018.01.01','沟通内容5',6881,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容55',6881,0,0,1,0,0 ) , ( '吴梦','2018.01.01','沟通内容6',6882,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容66',6882,0,1,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容7',6883,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容77',6883,1,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容8',6884,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容88',6884,1,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容9',6885,0,0,0,0,0 ) , ( '吴梦','2018.01.01','沟通内容99',6885,0,1,0,0,0 ) [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:24:30+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552029870213
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T15:30:24+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552030224769
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:33:01+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:33:07+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( 'Lily','2018-01-01','测试','1','1','1','武汉东湖学院','大专','2014','3','前程无忧','1552030386admin',NULL,NULL,'顺丰' ) , ( 'Lily','2018-01-01','测试','2','1','1','湖南农业大学','本科','2014','3','前程无忧','1552030386admin','沟通2','2沟通','顺丰' ) , ( 'Lily','2018-01-01','测试','3','1','1','湘潭职业技术学院','大专','2010','4','前程无忧','1552030386admin','沟通3','3沟通','顺丰' ) , ( 'Lily','2018-01-01','测试','4','1','1','北京理工大学珠海学院','本科','2014','3.5','BOSS直聘','1552030386admin','沟通4',NULL,'顺丰' ) , ( 'Lily','2018-01-01','前端','5','1','1','河南工业大学','本科','2015','3','前程无忧','1552030386admin','沟通5','5沟通','顺丰' ) , ( 'Lily','2018-01-01','前端','6','1','1','惠州学院','大专','2014','2','前程无忧','1552030386admin','沟通6',NULL,'顺丰' ) , ( 'Lily','2018-01-01','前端','7','1','1','广东青年职业学院','大专','2014','3.5','前程无忧','1552030386admin','沟通7','7沟通','顺丰' ) , ( 'Lily','2018-01-01','前端','8','1','1','黑龙江大学','大专','2014','4','前程无忧','1552030386admin','沟通8','8沟通','顺丰' ) , ( 'Lily','2018-01-01','java','9','1','1','中央广播电视大学','大专','2013','6','前程无忧','1552030386admin','沟通9',NULL,'乐钦' ) [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552030386admin' ORDER BY `id` ASC [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_communicate` (`ct_user` , `communicate_time` , `content` , `resume_id` , `screen` , `arrange_interview` , `arrive` , `approved_interview` , `entry`) VALUES ( 'Lily','2018-01-01','沟通2',6887,0,0,0,0,0 ) , ( 'Lily','2018-01-01','2沟通',6887,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通3',6888,0,0,0,0,0 ) , ( 'Lily','2018-01-01','3沟通',6888,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通4',6889,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通5',6890,0,0,0,0,0 ) , ( 'Lily','2018-01-01','5沟通',6890,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通6',6891,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通7',6892,0,0,0,0,0 ) , ( 'Lily','2018-01-01','7沟通',6892,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通8',6893,0,0,0,0,0 ) , ( 'Lily','2018-01-01','8沟通',6893,0,0,0,0,0 ) , ( 'Lily','2018-01-01','沟通9',6894,0,0,0,0,0 ) [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:33:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552030387146
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T15:44:05+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1552031044694
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' ) [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-02 00:00:00' and '2019-03-02 23:59:59' and ct_user='admin' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-03 00:00:00' and '2019-03-03 23:59:59' and ct_user='admin' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-04 00:00:00' and '2019-03-04 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-05 00:00:00' and '2019-03-05 23:59:59' and ct_user='admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-08T15:44:09+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552031049667
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-08T15:44:12+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552031052163
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T18:36:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-08T18:45:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552041941admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552041941admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552041941admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552041941admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552041941admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552041941admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552041941admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552041941admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552041941admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552041941admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_communicate` (`ct_user` , `communicate_time` , `content` , `resume_id`) VALUES ( '吴梦','2018.01.01','沟通内容1',6895 ) , ( '吴梦','2018.01.01','沟通内容2',6896 ) , ( '吴梦','2018.01.01','沟通内容3',6897 ) , ( '吴梦','2018.01.01','沟通内容33',6897 ) , ( '吴梦','2018.01.01','沟通内容4',6898 ) , ( '吴梦','2018.01.01','沟通内容44',6898 ) , ( '吴梦','2018.01.01','沟通内容5',6899 ) , ( '吴梦','2018.01.01','沟通内容55',6899 ) , ( '吴梦','2018.01.01','沟通内容6',6900 ) , ( '吴梦','2018.01.01','沟通内容66',6900 ) , ( '吴梦','2018.01.01','沟通内容7',6901 ) , ( '吴梦','2018.01.01','沟通内容77',6901 ) , ( '吴梦','2018.01.01','沟通内容8',6902 ) , ( '吴梦','2018.01.01','沟通内容88',6902 ) , ( '吴梦','2018.01.01','沟通内容9',6903 ) , ( '吴梦','2018.01.01','沟通内容99',6903 ) [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-08T18:45:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552041941557
+[ error ] [0]致命错误: Class 'SphinxClient' not found

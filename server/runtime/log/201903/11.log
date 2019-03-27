@@ -1,0 +1,1564 @@
+---------------------------------------------------------------
+[ 2019-03-11T09:35:32+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552268132771
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-11T09:35:33+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552268133791
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T10:00:04+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552269604354
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-11T12:14:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%AC%A7%E6%98%82&_d=1552277682181
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094006s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '欧昂' ORDER BY `mfy_time` DESC [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-11T12:14:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:3.012172s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '欧昂'  AND `phone` = '15986628062'  AND `email` = '1349909594@qq.com' LIMIT 1 [ RunTime:0.056004s ]
+---------------------------------------------------------------
+[ 2019-03-11T12:14:57+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%AC%A7%E6%98%82&_d=1552277697666
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '欧昂' ORDER BY `mfy_time` DESC [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2019-03-11T12:14:59+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130007s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '欧昂'  AND `phone` = '15986628062'  AND `email` = '1349909594@qq.com' LIMIT 1 [ RunTime:0.060003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `educational` , `phone` , `email` , `school` , `speciality` , `skillExpertise` , `certificate` , `educational_background` , `graduation_time` , `work_year` , `source` , `expected_job` , `ct_user`) VALUES ('欧昂' , '男' , '本科' , '15986628062' , '1349909594@qq.com' , '湖南衡阳师范学院' , '电子信息工程' , '专业技能
+熟悉java基础技术；
+熟悉Oracle,mySql数据库的操作；
+熟悉JSP，html5,ionic，CSS，javascript，angluarjs，Ajax等前台技术；
+熟悉PE，Mybitis，SSH框架。
+
+
+工
+作
+经
+验
+一．北京云核（2018.7-至今）
+2018年7月进入北京云核，进入深农商互联网项目组做人力外包。开发了个人网银大额存单需求开发（大额存单未上线），电信联名卡网申，微信模板后缀，电信联名卡权益平台开发，los反欺诈系统优化等需求。主要用到的前台技术有html，jsp，jquery，JavaScript，后台技术为Java，主要使用框架是PE（由科蓝公司提供的非开源框架），athena（云核公司提供的非开源框架），springboot，osgi。
+二．长亮科技（2016.9-2018.6）
+在2016年九月入职长亮核心前端交互一部,主要从事银行前端系统的工作,曾在西藏银行,荥阳利丰村镇银行,江南农商行三家银行参与柜面系统及CR系统的开发.
+2.1西藏银行综合柜面子项目（负责）
+时间：2017.11-2018.6
+职责:负责日常柜面新需求的开发测试以及日常生产维护;负责代码版本管理;负责与行方对接,整理详细设计文档,与第三方公司对接,整理接口文档。
+工作内容简述：工作为人力外包性质,柜面项目组只有我一个人.期间主要完成的工作是:非居民涉税信息报送一二期，社保卡需求一二期，预售房资金监管柜面模块开发。
+2.2荥阳利丰村镇银行柜面子项目（负责）
+时间：2017.3-2017.11
+职责:参与农信银需求讨论,出具详细设计文档;根据农信银需求文档,开发农信银柜面,并与农信银中心联调;参与农信银中心的入网测试;编写农信银系统的操作手册,编写农信银系统的上线验证案例。
+工作内容简述：工作为项目外包性质,项目组为柜面一人,核心一人,前置一人.项目实现荥阳利丰村镇银行以及其他六家法人行实现农信银功能,以及七家法人间的资金往来。
+2.3江南农商行柜面子项目（参与）
+时间：2016.9-2017.3
+职责:熟悉公司内部框架,学习银行内部交易流程;整理文档;参与柜面以及CR需求的开发。(CR:负责银行前端系统至后端系统的报文转发)
+工作内容简述：：工作为项目外包性质,项目组人数为五人.期间负责苏州同城，借意险 柜面模块开发。黄金银行（理财产品），聚宝盆（理财产品）CR开发。
+三． 雁联(2015.10-2016.8)
+在2015年10月开始在雁联实习, 进的是运营管理一部,在公司学习两个月后,进入了华润项目组,参与华润银行的风控系统的开发。
+3.1华润银行风控系统开发（参与）
+时间：2015.10-2016.4（实习） 2016.6-2016.8
+主要工作内容：参与流水监督及流水再监督需求开发，参与文件导入共功能需求开发。
+流水监督及流水再监督需求:
+大致业务:获取柜员前一工作日的涉及支付的流水,随机监督80%的流水,为必须监督的流水,20%为可监督流水.根据流水获取交易详情,监督交易风险.
+导入功能需求开发:
+大致业务:读取指定的exl文件,更新数据库中的数据.
+' , ' ' , '缺少或不能识别毕业时间   缺少或不能识别毕业院校   缺少或不能识别专业   缺少或不能识别学历   ' , '2016' , '4' , '中国人才' , 'Java' , 'admin') [ RunTime:0.966055s ]
+---------------------------------------------------------------
+[ 2019-03-11T12:15:00+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6904&_d=1552277700839
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6904 LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:42:45+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552282965365
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:44:01+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283041535
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.046003s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:44:01+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `graduation_time` , `expected_job` , `source` , `work_year` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '缺少或不能识别毕业时间   缺少或不能识别毕业院校   缺少或不能识别专业   缺少或不能识别学历   ' , '2016' , 'Java' , '前程无忧' , '5' , 'admin') [ RunTime:0.058003s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:44:05+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6905&_d=1552283045559
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6905 LIMIT 1 [ RunTime:0.032002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:44:11+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6904&_d=1552283051115
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6904 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:44:14+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6905&_d=1552283054299
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6905 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:45:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552283130197
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:45:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283152671
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:45:55+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:46:12+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283171914
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:46:12+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:46:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283199967
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.048002s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:46:40+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:53:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283590289
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.060003s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:53:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.048003s ]
+[ error ] [8]未定义变量: list
+---------------------------------------------------------------
+[ 2019-03-11T13:56:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552283811460
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.076005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2019-03-11T13:56:51+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.046003s ]
+[ error ] [8]未定义变量: educational
+---------------------------------------------------------------
+[ 2019-03-11T14:04:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552284264156
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:04:25+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `work_year` , `graduation_time` , `source` , `expected_job` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '2016年毕业   武汉职业技术学院   缺少专业   大专   ' , '1' , '2016' , '前程无忧' , '前端开发' , 'admin') [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:04:27+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6906&_d=1552284267895
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6906 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:04:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6906 [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6906 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:04:54+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552284294442
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:04:54+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552284294737
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-11T14:04:56+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552284296147
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:05:33+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552284332948
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:05:33+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `speciality` , `source` , `expected_job` , `graduation_time` , `work_year` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '2016年毕业   武汉职业技术学院   计算机专业   大专   ' , '计算机专业' , '前程无忧' , 'Java' , '2016年' , '4' , 'admin') [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:05:34+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6907&_d=1552284334658
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6907 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:06:53+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6907 [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6907 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:06:56+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552284416301
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:07:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552284460451
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114006s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.046003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:07:40+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `graduation_time` , `speciality` , `work_year` , `source` , `expected_job` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '2006年毕业   武汉职业技术学院   软件工程   大专   ' , '2006' , '软件工程' , '4' , '前程无忧' , '前端开发' , 'admin') [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:07:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6908&_d=1552284462380
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6908 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:07:48+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6908&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6908 LIMIT 1 [ RunTime:0.026001s ]
+[ error ] [8]未定义变量: educational_background
+---------------------------------------------------------------
+[ 2019-03-11T14:09:18+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6908&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6908 LIMIT 1 [ RunTime:0.025001s ]
+[ error ] [8]未定义变量: educational_background
+---------------------------------------------------------------
+[ 2019-03-11T14:10:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6908&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6908 LIMIT 1 [ RunTime:0.047002s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:11:03+08:00 ] 127.0.0.1 GET www.job.com/api/communication/list?resume_id=6908&_d=1552284663112
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`uname` WHERE  `resume_id` = 6908 [ RunTime:0.049003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:43:24+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.190011s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6908 [ RunTime:0.192011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6908 [ RunTime:0.108006s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:43:29+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552286605547
+[ sql ] [ DB ] CONNECT:[ UseTime:4.041231s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.063004s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:44:13+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552286653125
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092005s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.073004s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:44:13+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:54:53+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552287291703
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205012s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.074004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2019-03-11T14:54:53+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113006s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.106006s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:32:49+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552289569024
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.059004s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:32:49+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.047003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `graduation_time` , `speciality` , `work_year` , `source` , `expected_job` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '1992年毕业   武汉职业技术学院   六学   大专   ' , '1992' , '六学' , '4' , '前程无忧' , 'Android' , 'admin') [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:32:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6909&_d=1552289570958
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6909 LIMIT 1 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:33:09+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552289589546
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:33:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:33:58+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:34:05+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552289645248
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:34:07+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:34:18+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:34:25+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:34:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552289670531
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:34:38+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:34:50+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:35:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:35:34+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552289734470
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083004s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.032002s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:35:34+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552289734842
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-11T15:35:35+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552289735795
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:35:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-11T15:38:12+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552289892322
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.048003s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:38:12+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '李鹏程'  AND `phone` = '15999599194'  AND `email` = '508887322@qq.com' LIMIT 1 [ RunTime:0.065004s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `birthday` , `school` , `educational` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `graduation_time` , `expected_job` , `work_year` , `source` , `speciality` , `ct_user`) VALUES ('李鹏程' , '男' , '1991.06.04' , '武汉职业技术学院' , '大专' , '15999599194' , '508887322@qq.com' , '技能专长
+1、熟悉HTML、CSS、JavaScript等前端技术；
+2、熟悉HTML5和CSS3相关新特性；
+3、熟悉vue,熟悉vue-route,vuex等vue全家桶；熟悉vue钩子函数；
+4、能根据项目需求灵活运用百度地图api,echarts插件，scroller组件，lrz压缩以及cropper剪切图片处理技术；
+5、熟悉muse-ui,vux等ui框架；
+6、熟悉axios,熟悉http请求，实现前后端数据动态交互；
+7、熟悉H5与原生交互技术,如Hybrid,cordora；
+8、熟悉代码管理工具git；
+9、了解Angular框架中的自定义指令、自定义服务以及路由等相关特性；
+10、了解node.js，了解webpack构建工具；
+11、熟悉移动设备兼容性技术，如rem、flex布局，能根据设计需求做出符合要求的前端界面；
+12、熟悉微信小程序。
+' , '工作经历
+2017.8-今           武汉佰钧成技术有限公司（外包宇通客车）   Web前端开发工程师
+工作职责:1、参与pc、app项目开发；
+         2、项目更新迭代；
+         3、优化项目代码，提高项目运行稳定性及兼容性；
+         4、了解最新前端动态，以便快速运用到项目之中。
+2015.6-2017.6   		深圳市互动时代科技有限公司      Web前端开发工程师
+工作职责:	1、参与pc、app项目开发；
+			2、使用JavaScript、jQuery以及一些轻量级插件如zepto等构建前端页面；
+			3、使用Vue、Bootstrap等框架进行项目开发；
+			4、优化项目代码和项目性能，处理兼容性问题。
+2014.6-2015.4       安琪酵母股份有限公司          实习生
+工作职责:1、官网维护，迭代。
+' , '项目经验
+项目名称：安睿通（APP+小程序）
+开发环境： Window7+HBuilder+Chrome+微信开发者工具
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要为了实现人车远程控制，为发车提供预热支持，检查当前车辆状态，为用户反馈提供平台实时上传车辆状况以及改进建议。
+责任描述： 主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台实现交互功能实现，配合测试人员实车联调，配合android和ios开发实现原生交互。以及后期版本迭代。
+技术实现： 1、主要负责app项目H5开发，辅助开发小程序，根据设计ui实现静态页面开发，引用相关组件vue-3d-picker、vue-scroller实现设计还原。
+	 2、编写公共组件，以便于在各分页中复用；
+            3、配置路由表，使用路由映射到各个组件；
+	 4、和后端工程师以及原生开发人员协作，实现数据交互；
+	 5、调用百度api,实现地图渲染，线路规划；利用coordtransform插件实现坐标经纬度转化。
+项目名称：宇信通hr自助项目
+开发环境： Window7+HBuilder+Chrome
+所用技术： HTML+CSS+Vue+JavaScript
+项目背景:	该项目主要需求是实现人员考勤查看，工资查询，请假申请以及考勤申诉，个人信息修改等功能。
+责任描述:	主要负责该项目H5的相关内容，静态页面的渲染、动态交互的实现。配合后台以及原生开发实现交互功能实现。以及后期版本迭代。
+技术实现:	1、考勤查询模块，引用适合时间插件，根据ui实现设计还原，设备兼容，以及数据处理以便符合需求原型；
+2、调用原生提供的cordova接口实现原生交互，如:相机相册，附件预览以及上传等；
+3、后期版本迭代调整入口界面，增加头像修改功能，运用插件lrz压缩以及cropper剪切实现图片处理，处理上传图片接口反应太慢的问题；
+4、新增面试官工作台和我要开证明两个模块。
+项目名称：宇信通整车物流项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目是服务于产品销售出库过程中对产品进行批量保养录取，车辆核对，车辆排查，现场服务的一个数据服务流程，以保证效率以及产品质量。
+责任描述：	主要负责该项目车辆核对、现场服务、车辆排查、维护保养、门卫五个模块的页面及功能开发。
+技术实现：	1、使用HTML和CSS进行静态页面的开发和渲染；
+	 2、数据量较大，使用vue-scroller实现分页处理，实现记住位置功能以便返回时滚动到离开时的位置；
+	 3、公共组件编写维护。
+项目名称：宇信通移动考勤移动端项目
+开发环境：Window7+HBuilder+Chrome
+所用技术：HTML+CSS+Vue+JavaScript
+项目背景： 该项目主要用于用户在考勤范围内实时考勤，解决员工太多考勤拥挤问题，通过pc端来划定考勤范围。
+责任描述：	主要负责该项目移动考勤，地点微调，出勤查询，以及位置搜索四个模块页面及功能开发。
+技术实现：	1、调用百度api实现地图显示，定位，位置搜索，周边展示；
+	 2、通过原生提供的接口进行人面识别考勤，以及考勤数据的展示；
+	 3、设备兼容性处理，运用rem进行页面布局。
+其它项目:畅享宇通、车联网营运（纯展示类项目，大量运用echarts图表）、春节祝福等
+个人情况
+1、	对新技术有很强的求知欲。
+2、	有很好的自学能力，能较快掌握新框架、新知识。
+3、	对待工作细心沉着；真诚随和，团队为先。善于沟通。
+4、	可以接受高压工作环境，加班以及出差。
+5、	喜欢运动，热爱篮球。
+' , ' ' , '2009年毕业   武汉职业技术学院   六学   大专   ' , '2009' , '前端开发' , '3' , '中国人才' , '六学' , 'admin') [ RunTime:0.058003s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:38:14+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6910&_d=1552289894240
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6910 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-11T15:38:32+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552289912469
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:27:32+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E5%90%B4%E5%BF%97%E6%B4%81&_d=1552292852668
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '吴志洁' ORDER BY `mfy_time` DESC [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:27:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '吴志洁'  AND `phone` = '15807550242'  AND `email` = 'wuzhijie_a@163.com' LIMIT 1 [ RunTime:0.046003s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:27:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E5%90%B4%E5%BF%97%E6%B4%81&_d=1552292861492
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '吴志洁' ORDER BY `mfy_time` DESC [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:27:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '吴志洁'  AND `phone` = '15807550242'  AND `email` = 'wuzhijie_a@163.com' LIMIT 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `status` , `phone` , `email` , `sex` , `age` , `birthday` , `work_year` , `speciality` , `school` , `educational` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `educational_background` , `certificate` , `skillExpertise` , `source` , `expected_job` , `ct_user`) VALUES ('吴志洁' , '目前正在找工作' , '15807550242' , 'wuzhijie_a@163.com' , '男' , '25' , '1994年2月12日' , '4' , '计算机科学与技术' , '邵阳学院' , '本科' , '1.热爱软件开发行业，自学能力强，喜欢专研新技术
+2.待人真诚，具有良好的团队合作精神
+3.工作认真负责，积极上进，能够吃苦耐劳，有良好的职业道德素质
+
+' , '工作经验
+2018/3-2018/12	新致软件 (9个月 ) 
+	计算机软件|150-500人|创业公司
+FS1	Java开发工程师
+工作描述：	银行资产托管系统，证券的估值，主要负责业务处理、报表功能的开发，缓存接口开发和维护
+2016/9-2017/12	上海长亮科技 (1年 3个月 ) 
+	计算机软件|150-500人|上市公司
+交付一部	Java开发工程师
+工作描述：	负责审批系统的页面展示和逻辑处理、相关开发文档的编写、接口的开发以及与APP端联调相关接口，与其他第三方平台联调接口、账务中吃文件、出报表。
+2015/7-2016/9	武汉群力联英软件有限公司 (1年 2个月 ) 
+	计算机软件|少于50人|创业公司
+开发部	软件工程师
+工作描述：	前期参与项目的需求分析，根据需求完成部分模块的功能实现，后期进行项目的BUG修复，功能细节的完善
+' , '项目经验
+2018/3-2018/12	托管估值系统
+所属公司：	新致软件
+项目描述：	托管估值系统实现了托管产品以投资组合为单位的投资运作业务的会计核算，并对资产进行估值，计算资产净值，生成相关报表。
+系统处理方式以自动化、批量处理为目标进行设计，从托管平台系统获取投资组合的各项交易记录，从外部信息提供商处获取外部公开信息，通过预先配置的会计核算模板，对获取的数据进行加工处理，形成会计核算记录，体现投资组合的资产、负债、权益、收入和费用。按照客户的估值方法，对资产进行估值，计算资产净值，以多种类的报表形式反映投资组合的投资运作情况。
+责任描述：	1、主要负责估值系统数据交换模块表结构设计、数据管理模块框架设计及数据导入开发、数据交换模块开发、报表功能模块、对账功能模块开发，常用基础工具类开发和代码性能调优、sql调优。
+对于系统的数据流入流出尤其擅长，处理的文件类型包括txt、excel、Excel转Word、mdb、dbf、db2的del文件导出等。
+2、系统日常运维任务，包括生产环境健康性检查；编写定时任务脚本，每周作生产db2数据库运维，导出生产慢交易及慢sql并用jvisualvm工具和db2sql执行策略工具进行分析和优化。
+3、数据库备份与还原。编写数据库全量备份和增量备份脚本、编写数据库恢复脚本，定时还原生产数据库。
+	
+2016/9-2017/12	银联数据消费金融
+所属公司：	上海长亮科技
+项目描述：	项目采用java spring架构,GWT为前台框架,MySql为数据库,运用spring-batch,maven,hibernate,RabbitMQ等技术主要实现金融内部人员对使用消费信贷的客户进行信息录入、审批、账务处理、贷后等相关业务的处理。
+责任描述：	负责审批系统的页面展示和逻辑处理、相关开发文档的编写、接口的开发以及与APP端联调相关接口，与其他第三方平台联调接口、账务中吃文件、出报表。在这个项目先后参与了徽商银行、兴业银行、渤海银行、河北银行的开发工作，目前这几家银行都成功上线运行。
+	
+2016/4-2016/9	银行电商交易和支付平台（长期项目）
+所属公司：	武汉群力联英软件有限公司
+项目描述：	此项目平台主要是为银行提供的电商交易，理财和支付平台；电商交易主要是和银行签约商户入驻到金融平台，商家和用户进行交易，商品订单支付，消费，退款。对于支付主要是会员卡支付，电子钱包支付，红包支付，积分支付，以及第三方微信支付，银联支付，支付宝支付等，和账务系统的记账，对账，轧账，划账功能。
+责任描述：	1.参加金融平台的需求讨论，数据库设计工作
+2.涉及平台会员卡模块，优惠买单模块，积分转增模块的开发工作
+3.参与部分对整个平台的功能测试工作
+4.参与整个项目的部署和服务器搭建工作
+5.平台的电商部分的维护工作
+	
+2015/7-2016/3	天津中交局工程和人员监管系统
+所属公司：	武汉群力联英软件有限公司
+项目描述：	此项目系统主要是为天津中交局提供的项目工程和人员管理系统，包括工程的流程审批，监管控制，风险评估，工程进度管理；以及工程现场人员工作的实时监管和管理。
+责任描述：	1.参与项目工程管理模块和工程人员管理模块的开发，包括工程项目的信息维护和审批，人员的现场定位和跟踪以及人员的信息维护
+2.参与编写项目的进度报告和汇总报告文档工作
+3.PC端和APP端按照测试用例进行功能性测试，以及bug提交工作
+4.对测试组测试的和用户现场测试的bug进行修改，以及用户需求变更的项目维护工作
+	
+' , '2015' , '2011/9-2015/7  邵阳学院  计算机科学与技术  本科
+' , ' ' , ' ' , '前程无忧' , '前端开发' , 'admin') [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:27:43+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6911&_d=1552292863307
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6911 LIMIT 1 [ RunTime:0.043002s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:57:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6911&_d=1552294659077
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6911 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-11T16:57:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6911&_d=1552294662451
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6911 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:02:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6911&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6911 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:07:16+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6910&_d=1552295236521
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6910 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:09:32+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552295372082
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:09:44+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E5%90%B4%E5%BF%97%E6%B4%81&_d=1552295384346
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '吴志洁' ORDER BY `mfy_time` DESC [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:09:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152009s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '吴志洁'  AND `phone` = '15807550242'  AND `email` = 'wuzhijie_a@163.com' LIMIT 1 [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:10:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9D%8E%E9%B9%8F%E7%A8%8B&_d=1552295407246
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '李鹏程' ORDER BY `mfy_time` DESC [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:10:48+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E8%A2%81%E9%87%91%E8%BE%89&_d=1552295448280
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '袁金辉' ORDER BY `mfy_time` DESC [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:10:48+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '袁金辉'  AND `phone` = '18770002841'  AND `email` = '1003168671@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `sex` , `school` , `educational` , `speciality` , `phone` , `email` , `skillExpertise` , `workExperience` , `projectExperience` , `certificate` , `educational_background` , `graduation_time` , `work_year` , `source` , `expected_job` , `ct_user`) VALUES ('袁金辉' , '男' , '南昌航空大学' , '本科' , '软件工程' , '18770002841' , '1003168671@qq.com' , '专业技能简介	1、熟练使用Oracle，mysql，db2等数据库以及redis缓存数据库，SQL语句编写，对Hadoop有所了解；
+2、熟练使用java开发框架与技术：ssm, springmvc，对springcloud ，dubbo等微服务框架有所了解；
+3、前端设计：jquery,dwz,bootstrap,angularjs, nodejs等框架；
+4、中间件使用：kafka，nginx，zookeeper等；
+5、使用过git，svn等版本管理工具以及paas， devops等平台；
+6、常用
+开发工具：eclipse，idea等，Visual Studio了解；
+7、熟悉Linux操作系统；
+8、具有分布式系统与大数据项目开发经验；
+' , '工作经历
+	起止日期	任职公司	职务
+	2016.02-2017.08	深圳长亮科技股份有限公司	Java开发工程师
+	2017.09-2019.01	软通动力信息技术有限公司	Java开发工程师
+' , '项目经验
+起/止日期	参加过的项目名称	项目角色	备注
+2016-2017	中信银行绩效系统	Java开发工程师	1.	
+项目描述：整体项目       是实现农商行人员机构的绩效考核。项目使用ssm框架来构建模块开发
+2.	项目主要功能有业绩管理，报表管理，指标与方案管理等。
+3.	负责项目部分功能测试。
+2017-2018	广州农村商业银行村镇绩效系统	Java开发工程师
+数据库开发工程师	1.	
+项目描述：整体项目是实现农商行人员机构的绩效考核，采用Hadoop对数据进行存储与处理。
+2.	个人主要负责部分前台开发，后台基础数据处理，配合业务人员进行文档编写，功能模块的优化。  
+3.	项目主要实现，前台通过ssm框架实现，后台通过hadoop 对数据处理与存储，mysql 存储hive 的元数据，以及存储hadoop 回流的处理后数据，提供数据给页面查询。
+2018-2019	招商银行一网通项目	
+Java开发工程师
+	1．	实现客户在pc端与移动端的快速填单。
+2．	主要负责前台代码编写以及与外部系统的对接。
+3．	使用idea工具开发，git版本控制，ssm框架，缓存组件，devops项目部署发布等，多系统对接等。
+4．	项目接口编写，代码测试优化。
+2018-2019	招商银行排队机项目	
+Java开发工程师
+	1．	实现客户取号打印业务，柜员叫号业务，显示屏显示语音播报等功能，不同入口预约处理等功能。
+2．	负责不同方案代码编写以及数据存储SQL编写与数据日志处理等。
+3．	采用redis进行数据缓存，kafka日志存储分析，db2数据存储，ssm前台框架。
+4．	负责代码测试与缺陷修复。
+' , ' ' , '2001年毕业   南昌航空大学   软件工程   本科   ' , '2001' , '5' , '前程无忧' , 'IOS' , 'admin') [ RunTime:0.034002s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:10:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6912&_d=1552295450922
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6912 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:32:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/download?url=uploads/20190309/cae289793c3f82aa60d30a03ecd845d3.doc&file_name=51job_%E9%A9%AC%E6%BD%87,%E6%83%B3%E5%85%88%E7%9C%8B%E7%94%B2%E6%96%B9%E7%9A%84%E6%9C%BA%E4%BC%9A(762821700).doc
+[ error ] [0]语法解析错误: syntax error, unexpected '"', expecting ',' or ')'
+---------------------------------------------------------------
+[ 2019-03-11T17:35:19+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_upload_file?resume_id=6912&_d=1552296919053
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6912 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:35:24+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_file
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `file_name` = '51job_马潇,想先看甲方的机会(762821700).doc'  AND `resume_id` = 6912 LIMIT 1 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume_upload` (`resume_url` , `ct_user` , `file_name` , `resume_id`) VALUES ('uploads/20190311\\83da576b37c8548cd69dd560e1d6fb2e.doc' , 'admin' , '51job_马潇,想先看甲方的机会(762821700).doc' , 6912) [ RunTime:0.032002s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:47:52+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552297672082
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T17:47:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552297672353
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-11T17:47:53+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552297673273
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.061004s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:15:53+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552299353134
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:15:53+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `status` , `phone` , `email` , `sex` , `age` , `birthday` , `work_year` , `school` , `educational` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `educational_background` , `skillExpertise` , `certificate` , `source` , `expected_job` , `speciality` , `ct_user`) VALUES ('马潇' , '目前正在找工作' , '18773334366' , '3242216@qq.com' , '男' , '26' , '1992年10月2日' , '5' , '湖南工业大学' , '本科' , '1、5年的java开发工作经验，逻辑思维强悍，具备独到的分析与解决问题的能力。独立分析相关需求及编写需求、设计产品相关文档。java基础扎实，有良好的代码书写、注释和单元测试习惯。
+2、熟练掌握springboot、spring、springmvc、mybatis等开源框架，并对其扩展
+（mybatisPlus等）有一定的理解。
+3、熟系springcloud分布式微服务框架，有过分布式项目开发经验。
+4、熟练掌握mysql、DB2等关系性数据库及redis高性能内存数据库，有过性能优化的经验。
+5、熟系RocketMQ、apollo、cat等中间件，能安装、配置及接入使用。
+6、熟练使用Eclipse、sts、securecrt、svn、git、maven等
+开发工具及其相关插件。
+7、熟系Linux常用命令操作及nginx、tomcat、Apache、resin等web服务器安装、配置与管理。
+8、工作态度积极、好学，对新的技术有良好的学习能力，能迅速理解并使用。有项目整体协调工作能力及沟通合作技巧，较强的责任心及团队合作精神。
+
+' , '工作经验
+2017/11-至今	深圳汇海易融互联网金融服务有限公司 (1年 3个月 ) 
+	互联网/电子商务|150-500人|合资
+技术中心	Java高级开发工程师
+工作描述：	1、参与系统分布式重构，在技术总监的带领下，重新进行分布式架构，模块化分组开发，便于对整个系统的维护及新需求的扩展；
+2、新需求功能开发，“e计划”智能投标工具，参与其投标、匹配及还款的开发及测试，并参与功能测试及性能测试工作；
+3、参与财务报表的对接，实现自动对账，分类整理各类账务，统计资金流水。
+4、合规整改需求开发，与第三方资金存管系统对接，新增与修改支付接口，开发联调并测试。
+5、主导蜜蜂停车&e融所合作项目分析、设计及开发。
+6、后续产品部提出的新需求独立开发。
+2015/5-2017/10	北京赞同科技发展有限公司 (2年 5个月 ) 
+	计算机软件|1000-5000人|民营公司
+科技部	java开发工程师
+工作描述：	1、负责公司银行柜面系统开发、管理。
+2、参与系统新需求的分析、设计、编码等开发工作。
+3、分配组员具体的任务分工，解决疑难问题，跟踪项目开发进度及管理。
+4、参与项目文档编写，可行性报告反馈。
+2014/11-2015/5	长沙达内科技有限公司 (6个月 ) 
+	计算机软件|10000人以上|上市公司
+	软件工程师
+工作描述：	负责学员培训，从事JAVA教育事业，培养IT人才。
+' , '项目经验
+2018/7-至今	分布式系统重构
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：分布式系统重构开发，重新设计数据库结构，核心系统模块化折分为微服务，统一网关授权及解密，集中式redis缓存及配置管理，高并发消息处理及系统监测。提升系统稳定性及高并发性能。
+2、开发环境：sts、jdk1.8、aliyun服务器；
+3、项目框架：maven+springcloud+springBoot+mybatis；
+4、数据库：mysql及redis数据库；
+5、消息队列：RocketMQ。
+6、配置中心：携程apollo。
+7、监控中心：大众点评cat。
+8、项目模块：
+(1)用户中心微服务-负责用户层的业务处理
+(2)账户微服务-负责用户账户资金业务处理
+(3)标的微服务-负责标的管理
+(4)核算微服务-核心账务业务处理
+(5)定时任务微服务-负责所有定时任务的入口调用
+(6)聚合微服务-子服务的聚合，汇总对接网关
+……
+责任描述：	1、参与系统数据库结构分析及设计；
+2、参与分析、讨论及编写核心微服务方案设计；
+3、模快搭建、配置及开发用户中心系统微服务；
+4、参与平台聚合微服务的设计、开发及调试；
+5、编写系统接口文档及发布调试；
+6、配合测试工作，问题修改及优化；
+	
+2018/5-2018/6	蜜蜂停车&e融所合作项目
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：蜜蜂停车&e融所合作项目是e融所（汇海易融互联网服务有限公司）与蜜蜂停车（亿车）联合开发的跨行业金融合作项目。e融所提供完整业务流程，蜜蜂停车提供app入口，指引客户在蜜蜂停车app进行金融投资。为后续推出其它异业合作提供了整套解决方案。
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+springBoot+spring+mybatis；
+4、数据库：mysql数据库及redis缓存数据库；
+5、消息队列：RocketMQ。
+责任描述：	1、主导项目需求分析、设计及开发；
+2、综合协调项目工作实施、进度控制；
+3、主导项目架构设计，核心接口编写及程序开发；
+4、负责与第三方公司进行系统对接；
+5、负责测试申请提交、协调测试工作流程控制及问题修复；
+6、参与项目验收，上线投产。
+	
+2017/11-2018/4	e计划智能投标系统
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：“e计划”是e融所（汇海易融互联网服务有限公司）推出的新型智能投资工具。“e计划”对投资者认可的标的进行智能匹配，自动复投回款本金，优化投资；
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+ springmvc+spring+mybatis；
+4、数据库：mysql数据库；
+5、项目模块
+     投标：投资者购买标的，登记投标计录表；
+     授权：投资者投标前进行存管系统自动投标授权及自动债转授权；
+     匹配：系统定时自动匹配投资者购买标的与真实标的资产或债权转让的资产；
+     放款：定时查找满标的真实标的进行放款，定时扫描标的匹配的真实的标的全部放款后，生成还款计划，开始计息；
+     还款：批量查找还款计划，及时还款；
+     电子合同：展示投资者与借款人的合同凭证，同时生成保全合同。
+责任描述：	1、参与项目需求分析、讨论及开发；
+2、负责投标模块的开发，建立投标登记表，开发投标接口及投标业务逻辑；
+3、负责电子合同的开发，编写合同模板，模板数据的查询与传递，同时定时生成pdf合同文档，对接第三方电子保全公司，生成电子保全合同；
+4、参与配合测试人员进行功能与性能测试；
+5、参与项目上线投产验收工作。
+	
+2016/10-2017/10	浙商银行票据交易柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	1、开发环境：AB交易开发(Eclipse扩展)，jdk1.6,linux服务器。
+2、数据库：Db2数据库，建立新的登记表。
+3、框架：公司研发框架（基于spring与Apache）扩展框架。
+4、项目介绍：票据交易所是在上海建立的票据交易所，针对银行、金融机构及财务公司等客户的票据需求交易平台，实现公平对等的票据交易平台。浙商银行对此相应开发出与其对接的系统实现直连。实现在交易平台上柜员可以做交易。
+责任描述：	1、参与交易所票据交易柜面系统的分析、讨论及开发。
+2、分配组员内部人员的具体工作安排，工作计划及进度跟踪。
+3、编写需求分析文档、可行性分析报告、需求规格说明书等文档资料。
+4、参与框架插件开发，实现对应外部设备的接入。
+	
+2015/12-2016/9	浙商银行综合前端
+所属公司：	北京赞同科技发展有限公司
+项目描述：	浙商银行柜面系统开发及维护，框架层、应用层等软件开发。
+1、语言：java，结合公司研发的产品框架（基于spring开源框架扩展）进行开发。
+2、数据库：DB2数据库，采用公司框架（基于mybatis）访问数据。
+3、
+开发工具：AB交易开发(Eclipse扩展)进行java开发,ultraedit工具文档编写，SecureCRT查看linux服务器。
+4、
+项目描述：浙商银行柜面系统，是流程银行的一个渠道系统，系统供银行柜员使用，客户到银行柜台通过柜面系统进行交易，实现客户与银行的交易需求。柜面系统使用公司框架，通过PE流程及ESB与其它系统建立连接。
+责任描述：	1、针对业务人员提出的功能需求，分析、讨论、软件开发及测试。
+2、提升柜面系统的运行效率及功能扩展，参与其系统产品分析开发及测试。
+3、负责管理开发团队，分配组员具体任务，合作开发扩展功能需求，并跟踪其进度。
+	
+2015/5-2015/11	苏州银行柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	苏州银行柜面系统需求分析、讨论及开发。
+1、
+开发工具：AB交易开发（基于Eclipse）
+2、开发环境：个人笔记本与服务器(
+硬件环境)
+3、项目介绍：苏州银行TIPS系统是苏州银行对接南京地税开发的系统，实现客户、银行柜员、与银行核心及南京地税连接，实现银行代缴税。
+责任描述：	采用AB交易开发（基于Eclipse）工具进行银行交易开发，通过银行业务员下发交易文档，进行相应交易开发，沟通。
+1、负责与银行业务员沟通，了解其业务需求，同时开发出相应的交易交品。
+2、负责与第三方开发人员沟通联调，实现其系统正常对接。
+3、参与交易评估、测试、上线工作，进一步检验开发质量，完善项目。
+	
+' , '2014' , '2010/9-2014/7  湖南工业大学  无法识别或缺少专业   本科
+' , '技能特长 （包括IT技能、语言能力、证书、成绩、培训经历）
+▲技能/语言
+Java
+熟练
+▲证书
+2015/4	高级程序员
+2013/7	驾驶执照
+2012/4	全国计算机等级二级
+▲培训经历
+2014/7-2014/11	java软件开发
+培训机构：	长沙达内科技
+培训地点：	长沙
+' , ' ' , '中国人才' , '前端开发' , '六学' , 'admin') [ RunTime:0.069004s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:15:55+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6913&_d=1552299355833
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6913 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:16:49+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6913 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6913 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:16:50+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552299410153
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:26:31+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552299991291
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:26:31+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:26:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300000528
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:26:40+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ error ] [8]未定义数组索引: speciality
+---------------------------------------------------------------
+[ 2019-03-11T18:27:09+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300029852
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:27:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:27:26+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300046915
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:27:27+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `status` , `phone` , `email` , `sex` , `age` , `birthday` , `work_year` , `school` , `educational` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `educational_background` , `skillExpertise` , `certificate` , `source` , `expected_job` , `speciality` , `ct_user`) VALUES ('马潇' , '目前正在找工作' , '18773334366' , '3242216@qq.com' , '男' , '26' , '1992年10月2日' , '5' , '湖南工业大学' , '本科' , '1、5年的java开发工作经验，逻辑思维强悍，具备独到的分析与解决问题的能力。独立分析相关需求及编写需求、设计产品相关文档。java基础扎实，有良好的代码书写、注释和单元测试习惯。
+2、熟练掌握springboot、spring、springmvc、mybatis等开源框架，并对其扩展
+（mybatisPlus等）有一定的理解。
+3、熟系springcloud分布式微服务框架，有过分布式项目开发经验。
+4、熟练掌握mysql、DB2等关系性数据库及redis高性能内存数据库，有过性能优化的经验。
+5、熟系RocketMQ、apollo、cat等中间件，能安装、配置及接入使用。
+6、熟练使用Eclipse、sts、securecrt、svn、git、maven等
+开发工具及其相关插件。
+7、熟系Linux常用命令操作及nginx、tomcat、Apache、resin等web服务器安装、配置与管理。
+8、工作态度积极、好学，对新的技术有良好的学习能力，能迅速理解并使用。有项目整体协调工作能力及沟通合作技巧，较强的责任心及团队合作精神。
+
+' , '工作经验
+2017/11-至今	深圳汇海易融互联网金融服务有限公司 (1年 3个月 ) 
+	互联网/电子商务|150-500人|合资
+技术中心	Java高级开发工程师
+工作描述：	1、参与系统分布式重构，在技术总监的带领下，重新进行分布式架构，模块化分组开发，便于对整个系统的维护及新需求的扩展；
+2、新需求功能开发，“e计划”智能投标工具，参与其投标、匹配及还款的开发及测试，并参与功能测试及性能测试工作；
+3、参与财务报表的对接，实现自动对账，分类整理各类账务，统计资金流水。
+4、合规整改需求开发，与第三方资金存管系统对接，新增与修改支付接口，开发联调并测试。
+5、主导蜜蜂停车&e融所合作项目分析、设计及开发。
+6、后续产品部提出的新需求独立开发。
+2015/5-2017/10	北京赞同科技发展有限公司 (2年 5个月 ) 
+	计算机软件|1000-5000人|民营公司
+科技部	java开发工程师
+工作描述：	1、负责公司银行柜面系统开发、管理。
+2、参与系统新需求的分析、设计、编码等开发工作。
+3、分配组员具体的任务分工，解决疑难问题，跟踪项目开发进度及管理。
+4、参与项目文档编写，可行性报告反馈。
+2014/11-2015/5	长沙达内科技有限公司 (6个月 ) 
+	计算机软件|10000人以上|上市公司
+	软件工程师
+工作描述：	负责学员培训，从事JAVA教育事业，培养IT人才。
+' , '项目经验
+2018/7-至今	分布式系统重构
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：分布式系统重构开发，重新设计数据库结构，核心系统模块化折分为微服务，统一网关授权及解密，集中式redis缓存及配置管理，高并发消息处理及系统监测。提升系统稳定性及高并发性能。
+2、开发环境：sts、jdk1.8、aliyun服务器；
+3、项目框架：maven+springcloud+springBoot+mybatis；
+4、数据库：mysql及redis数据库；
+5、消息队列：RocketMQ。
+6、配置中心：携程apollo。
+7、监控中心：大众点评cat。
+8、项目模块：
+(1)用户中心微服务-负责用户层的业务处理
+(2)账户微服务-负责用户账户资金业务处理
+(3)标的微服务-负责标的管理
+(4)核算微服务-核心账务业务处理
+(5)定时任务微服务-负责所有定时任务的入口调用
+(6)聚合微服务-子服务的聚合，汇总对接网关
+……
+责任描述：	1、参与系统数据库结构分析及设计；
+2、参与分析、讨论及编写核心微服务方案设计；
+3、模快搭建、配置及开发用户中心系统微服务；
+4、参与平台聚合微服务的设计、开发及调试；
+5、编写系统接口文档及发布调试；
+6、配合测试工作，问题修改及优化；
+	
+2018/5-2018/6	蜜蜂停车&e融所合作项目
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：蜜蜂停车&e融所合作项目是e融所（汇海易融互联网服务有限公司）与蜜蜂停车（亿车）联合开发的跨行业金融合作项目。e融所提供完整业务流程，蜜蜂停车提供app入口，指引客户在蜜蜂停车app进行金融投资。为后续推出其它异业合作提供了整套解决方案。
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+springBoot+spring+mybatis；
+4、数据库：mysql数据库及redis缓存数据库；
+5、消息队列：RocketMQ。
+责任描述：	1、主导项目需求分析、设计及开发；
+2、综合协调项目工作实施、进度控制；
+3、主导项目架构设计，核心接口编写及程序开发；
+4、负责与第三方公司进行系统对接；
+5、负责测试申请提交、协调测试工作流程控制及问题修复；
+6、参与项目验收，上线投产。
+	
+2017/11-2018/4	e计划智能投标系统
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：“e计划”是e融所（汇海易融互联网服务有限公司）推出的新型智能投资工具。“e计划”对投资者认可的标的进行智能匹配，自动复投回款本金，优化投资；
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+ springmvc+spring+mybatis；
+4、数据库：mysql数据库；
+5、项目模块
+     投标：投资者购买标的，登记投标计录表；
+     授权：投资者投标前进行存管系统自动投标授权及自动债转授权；
+     匹配：系统定时自动匹配投资者购买标的与真实标的资产或债权转让的资产；
+     放款：定时查找满标的真实标的进行放款，定时扫描标的匹配的真实的标的全部放款后，生成还款计划，开始计息；
+     还款：批量查找还款计划，及时还款；
+     电子合同：展示投资者与借款人的合同凭证，同时生成保全合同。
+责任描述：	1、参与项目需求分析、讨论及开发；
+2、负责投标模块的开发，建立投标登记表，开发投标接口及投标业务逻辑；
+3、负责电子合同的开发，编写合同模板，模板数据的查询与传递，同时定时生成pdf合同文档，对接第三方电子保全公司，生成电子保全合同；
+4、参与配合测试人员进行功能与性能测试；
+5、参与项目上线投产验收工作。
+	
+2016/10-2017/10	浙商银行票据交易柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	1、开发环境：AB交易开发(Eclipse扩展)，jdk1.6,linux服务器。
+2、数据库：Db2数据库，建立新的登记表。
+3、框架：公司研发框架（基于spring与Apache）扩展框架。
+4、项目介绍：票据交易所是在上海建立的票据交易所，针对银行、金融机构及财务公司等客户的票据需求交易平台，实现公平对等的票据交易平台。浙商银行对此相应开发出与其对接的系统实现直连。实现在交易平台上柜员可以做交易。
+责任描述：	1、参与交易所票据交易柜面系统的分析、讨论及开发。
+2、分配组员内部人员的具体工作安排，工作计划及进度跟踪。
+3、编写需求分析文档、可行性分析报告、需求规格说明书等文档资料。
+4、参与框架插件开发，实现对应外部设备的接入。
+	
+2015/12-2016/9	浙商银行综合前端
+所属公司：	北京赞同科技发展有限公司
+项目描述：	浙商银行柜面系统开发及维护，框架层、应用层等软件开发。
+1、语言：java，结合公司研发的产品框架（基于spring开源框架扩展）进行开发。
+2、数据库：DB2数据库，采用公司框架（基于mybatis）访问数据。
+3、
+开发工具：AB交易开发(Eclipse扩展)进行java开发,ultraedit工具文档编写，SecureCRT查看linux服务器。
+4、
+项目描述：浙商银行柜面系统，是流程银行的一个渠道系统，系统供银行柜员使用，客户到银行柜台通过柜面系统进行交易，实现客户与银行的交易需求。柜面系统使用公司框架，通过PE流程及ESB与其它系统建立连接。
+责任描述：	1、针对业务人员提出的功能需求，分析、讨论、软件开发及测试。
+2、提升柜面系统的运行效率及功能扩展，参与其系统产品分析开发及测试。
+3、负责管理开发团队，分配组员具体任务，合作开发扩展功能需求，并跟踪其进度。
+	
+2015/5-2015/11	苏州银行柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	苏州银行柜面系统需求分析、讨论及开发。
+1、
+开发工具：AB交易开发（基于Eclipse）
+2、开发环境：个人笔记本与服务器(
+硬件环境)
+3、项目介绍：苏州银行TIPS系统是苏州银行对接南京地税开发的系统，实现客户、银行柜员、与银行核心及南京地税连接，实现银行代缴税。
+责任描述：	采用AB交易开发（基于Eclipse）工具进行银行交易开发，通过银行业务员下发交易文档，进行相应交易开发，沟通。
+1、负责与银行业务员沟通，了解其业务需求，同时开发出相应的交易交品。
+2、负责与第三方开发人员沟通联调，实现其系统正常对接。
+3、参与交易评估、测试、上线工作，进一步检验开发质量，完善项目。
+	
+' , '2014' , '2010/9-2014/7  湖南工业大学  无法识别或缺少专业   本科
+' , '技能特长 （包括IT技能、语言能力、证书、成绩、培训经历）
+▲技能/语言
+Java
+熟练
+▲证书
+2015/4	高级程序员
+2013/7	驾驶执照
+2012/4	全国计算机等级二级
+▲培训经历
+2014/7-2014/11	java软件开发
+培训机构：	长沙达内科技
+培训地点：	长沙
+' , ' ' , '前程无忧' , 'Java' , '六学' , 'admin') [ RunTime:0.077004s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:27:28+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6914&_d=1552300048615
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6914 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:31:25+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6914 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6914 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:31:26+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552300286060
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:32:05+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300325036
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.033002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:32:05+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:32:11+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300331826
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.034002s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:32:12+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.058003s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300630275
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.088005s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E9%A9%AC%E6%BD%87&_d=1552300661324
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '马潇' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '马潇'  AND `phone` = '18773334366'  AND `email` = '3242216@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `status` , `phone` , `email` , `sex` , `age` , `birthday` , `work_year` , `school` , `educational` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `educational_background` , `skillExpertise` , `certificate` , `speciality` , `source` , `expected_job` , `ct_user`) VALUES ('马潇' , '目前正在找工作' , '18773334366' , '3242216@qq.com' , '男' , '26' , '1992年10月2日' , '5' , '湖南工业大学' , '本科' , '1、5年的java开发工作经验，逻辑思维强悍，具备独到的分析与解决问题的能力。独立分析相关需求及编写需求、设计产品相关文档。java基础扎实，有良好的代码书写、注释和单元测试习惯。
+2、熟练掌握springboot、spring、springmvc、mybatis等开源框架，并对其扩展
+（mybatisPlus等）有一定的理解。
+3、熟系springcloud分布式微服务框架，有过分布式项目开发经验。
+4、熟练掌握mysql、DB2等关系性数据库及redis高性能内存数据库，有过性能优化的经验。
+5、熟系RocketMQ、apollo、cat等中间件，能安装、配置及接入使用。
+6、熟练使用Eclipse、sts、securecrt、svn、git、maven等
+开发工具及其相关插件。
+7、熟系Linux常用命令操作及nginx、tomcat、Apache、resin等web服务器安装、配置与管理。
+8、工作态度积极、好学，对新的技术有良好的学习能力，能迅速理解并使用。有项目整体协调工作能力及沟通合作技巧，较强的责任心及团队合作精神。
+
+' , '工作经验
+2017/11-至今	深圳汇海易融互联网金融服务有限公司 (1年 3个月 ) 
+	互联网/电子商务|150-500人|合资
+技术中心	Java高级开发工程师
+工作描述：	1、参与系统分布式重构，在技术总监的带领下，重新进行分布式架构，模块化分组开发，便于对整个系统的维护及新需求的扩展；
+2、新需求功能开发，“e计划”智能投标工具，参与其投标、匹配及还款的开发及测试，并参与功能测试及性能测试工作；
+3、参与财务报表的对接，实现自动对账，分类整理各类账务，统计资金流水。
+4、合规整改需求开发，与第三方资金存管系统对接，新增与修改支付接口，开发联调并测试。
+5、主导蜜蜂停车&e融所合作项目分析、设计及开发。
+6、后续产品部提出的新需求独立开发。
+2015/5-2017/10	北京赞同科技发展有限公司 (2年 5个月 ) 
+	计算机软件|1000-5000人|民营公司
+科技部	java开发工程师
+工作描述：	1、负责公司银行柜面系统开发、管理。
+2、参与系统新需求的分析、设计、编码等开发工作。
+3、分配组员具体的任务分工，解决疑难问题，跟踪项目开发进度及管理。
+4、参与项目文档编写，可行性报告反馈。
+2014/11-2015/5	长沙达内科技有限公司 (6个月 ) 
+	计算机软件|10000人以上|上市公司
+	软件工程师
+工作描述：	负责学员培训，从事JAVA教育事业，培养IT人才。
+' , '项目经验
+2018/7-至今	分布式系统重构
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：分布式系统重构开发，重新设计数据库结构，核心系统模块化折分为微服务，统一网关授权及解密，集中式redis缓存及配置管理，高并发消息处理及系统监测。提升系统稳定性及高并发性能。
+2、开发环境：sts、jdk1.8、aliyun服务器；
+3、项目框架：maven+springcloud+springBoot+mybatis；
+4、数据库：mysql及redis数据库；
+5、消息队列：RocketMQ。
+6、配置中心：携程apollo。
+7、监控中心：大众点评cat。
+8、项目模块：
+(1)用户中心微服务-负责用户层的业务处理
+(2)账户微服务-负责用户账户资金业务处理
+(3)标的微服务-负责标的管理
+(4)核算微服务-核心账务业务处理
+(5)定时任务微服务-负责所有定时任务的入口调用
+(6)聚合微服务-子服务的聚合，汇总对接网关
+……
+责任描述：	1、参与系统数据库结构分析及设计；
+2、参与分析、讨论及编写核心微服务方案设计；
+3、模快搭建、配置及开发用户中心系统微服务；
+4、参与平台聚合微服务的设计、开发及调试；
+5、编写系统接口文档及发布调试；
+6、配合测试工作，问题修改及优化；
+	
+2018/5-2018/6	蜜蜂停车&e融所合作项目
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：蜜蜂停车&e融所合作项目是e融所（汇海易融互联网服务有限公司）与蜜蜂停车（亿车）联合开发的跨行业金融合作项目。e融所提供完整业务流程，蜜蜂停车提供app入口，指引客户在蜜蜂停车app进行金融投资。为后续推出其它异业合作提供了整套解决方案。
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+springBoot+spring+mybatis；
+4、数据库：mysql数据库及redis缓存数据库；
+5、消息队列：RocketMQ。
+责任描述：	1、主导项目需求分析、设计及开发；
+2、综合协调项目工作实施、进度控制；
+3、主导项目架构设计，核心接口编写及程序开发；
+4、负责与第三方公司进行系统对接；
+5、负责测试申请提交、协调测试工作流程控制及问题修复；
+6、参与项目验收，上线投产。
+	
+2017/11-2018/4	e计划智能投标系统
+所属公司：	深圳汇海易融互联网金融服务有限公司
+项目描述：	1、项目介绍：“e计划”是e融所（汇海易融互联网服务有限公司）推出的新型智能投资工具。“e计划”对投资者认可的标的进行智能匹配，自动复投回款本金，优化投资；
+2、开发环境：EclipseEE或idea
+开发工具、jdk1.7、aliyun服务器、nginx服务；
+3、项目框架：maven+ springmvc+spring+mybatis；
+4、数据库：mysql数据库；
+5、项目模块
+     投标：投资者购买标的，登记投标计录表；
+     授权：投资者投标前进行存管系统自动投标授权及自动债转授权；
+     匹配：系统定时自动匹配投资者购买标的与真实标的资产或债权转让的资产；
+     放款：定时查找满标的真实标的进行放款，定时扫描标的匹配的真实的标的全部放款后，生成还款计划，开始计息；
+     还款：批量查找还款计划，及时还款；
+     电子合同：展示投资者与借款人的合同凭证，同时生成保全合同。
+责任描述：	1、参与项目需求分析、讨论及开发；
+2、负责投标模块的开发，建立投标登记表，开发投标接口及投标业务逻辑；
+3、负责电子合同的开发，编写合同模板，模板数据的查询与传递，同时定时生成pdf合同文档，对接第三方电子保全公司，生成电子保全合同；
+4、参与配合测试人员进行功能与性能测试；
+5、参与项目上线投产验收工作。
+	
+2016/10-2017/10	浙商银行票据交易柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	1、开发环境：AB交易开发(Eclipse扩展)，jdk1.6,linux服务器。
+2、数据库：Db2数据库，建立新的登记表。
+3、框架：公司研发框架（基于spring与Apache）扩展框架。
+4、项目介绍：票据交易所是在上海建立的票据交易所，针对银行、金融机构及财务公司等客户的票据需求交易平台，实现公平对等的票据交易平台。浙商银行对此相应开发出与其对接的系统实现直连。实现在交易平台上柜员可以做交易。
+责任描述：	1、参与交易所票据交易柜面系统的分析、讨论及开发。
+2、分配组员内部人员的具体工作安排，工作计划及进度跟踪。
+3、编写需求分析文档、可行性分析报告、需求规格说明书等文档资料。
+4、参与框架插件开发，实现对应外部设备的接入。
+	
+2015/12-2016/9	浙商银行综合前端
+所属公司：	北京赞同科技发展有限公司
+项目描述：	浙商银行柜面系统开发及维护，框架层、应用层等软件开发。
+1、语言：java，结合公司研发的产品框架（基于spring开源框架扩展）进行开发。
+2、数据库：DB2数据库，采用公司框架（基于mybatis）访问数据。
+3、
+开发工具：AB交易开发(Eclipse扩展)进行java开发,ultraedit工具文档编写，SecureCRT查看linux服务器。
+4、
+项目描述：浙商银行柜面系统，是流程银行的一个渠道系统，系统供银行柜员使用，客户到银行柜台通过柜面系统进行交易，实现客户与银行的交易需求。柜面系统使用公司框架，通过PE流程及ESB与其它系统建立连接。
+责任描述：	1、针对业务人员提出的功能需求，分析、讨论、软件开发及测试。
+2、提升柜面系统的运行效率及功能扩展，参与其系统产品分析开发及测试。
+3、负责管理开发团队，分配组员具体任务，合作开发扩展功能需求，并跟踪其进度。
+	
+2015/5-2015/11	苏州银行柜面系统
+所属公司：	北京赞同科技发展有限公司
+项目描述：	苏州银行柜面系统需求分析、讨论及开发。
+1、
+开发工具：AB交易开发（基于Eclipse）
+2、开发环境：个人笔记本与服务器(
+硬件环境)
+3、项目介绍：苏州银行TIPS系统是苏州银行对接南京地税开发的系统，实现客户、银行柜员、与银行核心及南京地税连接，实现银行代缴税。
+责任描述：	采用AB交易开发（基于Eclipse）工具进行银行交易开发，通过银行业务员下发交易文档，进行相应交易开发，沟通。
+1、负责与银行业务员沟通，了解其业务需求，同时开发出相应的交易交品。
+2、负责与第三方开发人员沟通联调，实现其系统正常对接。
+3、参与交易评估、测试、上线工作，进一步检验开发质量，完善项目。
+	
+' , '2014' , '2010/9-2014/7  湖南工业大学  地方大   本科
+' , '技能特长 （包括IT技能、语言能力、证书、成绩、培训经历）
+▲技能/语言
+Java
+熟练
+▲证书
+2015/4	高级程序员
+2013/7	驾驶执照
+2012/4	全国计算机等级二级
+▲培训经历
+2014/7-2014/11	java软件开发
+培训机构：	长沙达内科技
+培训地点：	长沙
+' , ' ' , '地方大' , '中国人才' , '前端开发' , 'admin') [ RunTime:0.075004s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:43+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6915&_d=1552300663244
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6915 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-11T18:37:51+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] DELETE FROM `rs_resume` WHERE  `id` = 6915 [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume_upload` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume_upload` WHERE  `resume_id` = 6915 [ RunTime:0.024001s ]

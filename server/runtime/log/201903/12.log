@@ -1,0 +1,417 @@
+---------------------------------------------------------------
+[ 2019-03-12T09:47:51+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355270917
+[ sql ] [ DB ] CONNECT:[ UseTime:0.689039s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:47:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355271893
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:47:52+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355272300
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:47:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355272552
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:47:53+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355273566
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:48:29+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355309364
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:48:29+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355309659
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:48:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355310551
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:49:29+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355368943
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.031001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:49:29+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355369243
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:49:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355370013
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:50:53+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355453625
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:50:53+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355453935
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:50:55+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355455750
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:52:05+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355525302
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:52:05+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355525581
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:52:06+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355526714
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:52:42+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355562267
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:52:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355562546
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:52:43+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355563807
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:53:25+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355605886
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:53:26+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355606173
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:53:27+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355607484
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:57:22+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355842604
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:57:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355842868
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:57:24+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355843960
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:03+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355883362
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:03+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355883633
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:58:04+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355884625
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:22+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355902255
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355902536
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:58:24+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355903958
+[ sql ] [ DB ] CONNECT:[ UseTime:0.740043s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.055003s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:38+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355918569
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.030001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:58:38+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355918860
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:58:40+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355920166
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:59:24+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552355963999
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T09:59:24+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552355964265
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T09:59:25+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552355964966
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-12T10:44:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E5%90%B4%E6%B3%BD%E6%B4%B2&_d=1552358680052
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '吴泽洲' ORDER BY `mfy_time` DESC [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-12T10:44:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '吴泽洲'  AND `phone` = '18813572894'  AND `email` = '958350800@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`birthday` , `name` , `phone` , `sex` , `age` , `work_year` , `educational` , `email` , `status` , `speciality` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `school` , `educational_background` , `certificate` , `skillExpertise` , `source` , `expected_job` , `ct_user`) VALUES ('2019.01.15' , '吴泽洲' , '18813572894' , '男' , '27' , '5' , '大专' , '958350800@qq.com' , '我目前处于离职状态' , '软件技术' , '
+1.熟悉使用Oracle，MySQL，Redis，Sync数据抽取，sql的优化，熟练使用报表工具。
+2.熟练使用网络爬虫抓取网页数据，解析数据。
+3.熟悉使用Django，Flask框架，Html，JavaScript，熟悉使用bookstrap，vue.js，echarts.js。
+4.熟悉使用Python，shell语言，能够开发出各种自动化工具。
+5.熟练使用Linux系统的基本命令，熟悉使用Vim命令，掌握tomcat,nginx,apache。
+6.熟练使用Linux基本操作,awk，docker容器使用。
+7.掌握Numpy及Pandas，对数据分析有一定的兴趣。
+本人对数据较为敏感，对后台开发很感兴趣，勤奋好学，对工作认真负责，做事谨慎少失误，和团队相处能力极强，有很强的团队合作能力。
+' , '工作经历                                                               
+2018.03 - 至今   深圳市广科创星科技有限公司   (11个月) 
+运维开发工程师 | 8001-10000元/月 
+IT服务(系统/数据/维护) 
+工作描述：	1.利用shell编写日志清理，自动安装等等脚本。
+2.日常服务器监控维护与处理异常，使用维护tomcat,nginx,apache等插件。
+3.SQL报表的编写，数据库的增删查改，索引，redis主从复制跟sync数据抽取。
+4.利用python处理海量数据的清洗，数据分析。
+5.亚马逊云搭建VPN，https安全证书部署(nginx+tomcat)，apk应用打包发布，onclickit系统跟API对接等等。
+6.阿里云和亚马逊云服务器的维护及各种组件使用。
+7.网站制作，图片处理美化，为客户搭建一套简单的官网模板，例如：https://gokerstar.com/。
+2017.03 - 2018.03   深圳标驰信息技术有限公司   (1年 1个月) 
+python开发工程师 | 6001-8000元/月 
+IT服务(系统/数据/维护) 
+工作描述：	平安公司驻场运维开发岗，负责MI系统平台的后台代码维护及自动化工具开发，获取解析数据，调用跟开发API接口，MySQL数据库的增删查改，主从复制，索引等等。
+2014.03 - 2017.03   北京金道天成信息系统服务有限公司   (3年 1个月) 
+运维开发工程师 | 6001-8000元/月 
+IT服务(系统/数据/维护) | 企业性质：合资 | 规模：500-999人 
+工作描述：	1.报表开发：将需要频繁访问数据库的工作通过PL/SQL+Report Builder制作成报表订阅，节省人力超过10万元。
+2.邮件推送：使用selenium和smtplib模块根据事件监控平台信息发送告警事件邮件，节省人力6小时/月。
+3.模拟点击：将日常繁琐的审批环节通过selenium模块实现后台模拟点击，节省人力2小时/日。
+4.批量重启机器特定进程：将需要人工一台台手动重启的机器进程用shell脚本化。
+5.VBA处理大量excel数据：使用VBA将超过1G的excel文件批量处理，人工需要4小时优化至20秒，用Python的pandas是用了4分钟。
+6.日常负责各种类型机器的patrol监控部署实施，监控白名单，BPPM告警屏蔽，安装配置新建cell转发设置，异常处理。
+在职期间，担任组内组长，linux培训讲师，完成华为内部各种开发及优化需求，为组内组外同事工作节省了大量时间，提升了效率，节省了可观的人工。
+' , '项目经历                                                              
+2018.08 - 2019.12 租户管理系统 (Django框架) 
+责任描述：	1.基于多个Onclick用户平台的数据进行管理。
+2.通过Django框架，前端使用bootstrap框架，实现租户的增删查改，数据Excel导出功能。
+3.利用echarts.js图表展示的方式实现每日每月点击转化及收入的统计。
+4.API的对接，利用requests及re模块实现间隔15分钟从各个上游获取解析数据到数据库。
+5.使用AES方式对用户密码进行加解密。
+项目描述：	基于多个Onclick用户平台的数据进行管理维护，从零到一。 
+2017.03 - 2017.12 平安项目MI系统平台 
+软件环境：	Windows 
+开发工具：	pycharm,mysql,notepad++ 
+责任描述：	1.优化同步设备：每天凌晨定时自动同步全部设备。
+2.API接口开发：给用户开发需要给名下机器发送信息通过调用API即可。
+3.设备分布图设计：通过调用数据库数据采用echarts.js展示给用户。
+4.号码到期邮件通知：使用smtplib将每月到期的号码邮件发送通知用户。
+5.设备注销及邮件通知：调用mysql数据将需要注销的设备通过调用API注销设备及邮件通知用户。
+6.可视化添加应用：将需要后台调用API添加应用的操作可视化到页面。
+项目描述：	该项目为MDM监控平台开发项目。该系统主要为用户提供设备监控的数据展示，根据后台设备的数据及生成图标报告给用户，为工作提升效率，而且不易出错。 
+2016.08 - 2016.09 华为项目事件监控系统 
+责任描述：	1.负责登录界面及数据库接口，编写SQL语句，定时任务自动刷新，更新事件的编写。
+2.对项目需求文档，操作说明书的设计。
+3.实现自动分配、主动监控、主动提醒、记录事件，事件统一监控功能的上线。
+4.服务端跟客户端本地日志的记录
+项目描述：	1.负责登录界面及数据库接口，编写SQL语句，定时任务自动刷新，更新事件的编写。
+2.对项目需求文档，操作说明书的设计。
+3.实现自动分配、主动监控、主动提醒、记录事件，事件统一监控功能的上线。
+4.后台存储过程编写
+5.服务端跟客户端本地日志的记录 
+' , '2014' , '广东理工职业学院' , '2011.09-2014.06  广东理工职业学院  软件技术  大专
+' , '证书                                                                   
+2016.01   驾驶执照 
+2013.12   CNCIW
+语言能力                                                               
+英语： 读写能力良好 | 听说能力良好 
+' , '专业技能
+linux：熟练
+Oracle/MySQL：熟练
+Python：熟练
+VBA：良好
+Django：熟练
+JavaScript：良好
+flask：良好
+兴趣爱好
+喜欢打篮球、跑步等运动，参加义工，对数据感兴趣。
+' , '前程无忧' , '前端开发' , 'admin') [ RunTime:0.143008s ]
+---------------------------------------------------------------
+[ 2019-03-12T10:46:25+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1552358785672
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089005s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.030001s ]
+---------------------------------------------------------------
+[ 2019-03-12T10:46:27+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552358787046
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T10:48:08+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1552358888755
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-12T10:48:09+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552358889038
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T10:48:18+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?ct_time=2019-03-13&pageIndex=1&pageSize=10&_d=1552358898909
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T10:48:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?ct_time=2019-03-13&pageIndex=1&pageSize=10&_d=1552358905783
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T15:43:36+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552376615960
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T15:43:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=test&_d=1552376632466
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = 'test' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T15:43:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = 'test'  AND `phone` = '34'  AND `email` = '334' LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `age` , `sex` , `birthday` , `expected_money` , `phone` , `native_place` , `work_year` , `english` , `status` , `email` , `expected_job` , `source` , `graduation_time` , `projectExperience` , `educational` , `speciality` , `expected_address` , `school` , `educational_background` , `nearest_unit` , `nearest_job` , `skillExpertise` , `selfEvaluation` , `certificate` , `workExperience` , `custom1` , `custom2` , `custom3` , `ct_user` , `ct_timestamp`) VALUES ('test' , '' , '' , '' , '' , '34' , '' , '43' , '' , '' , '334' , 'Android' , '中国人才' , '3' , '' , '初中' , '' , '' , '44' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'admin' , 1552376632) [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2019-03-12T16:48:42+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1552380522497
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-03-12T16:48:50+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze
+[ error ] [2]strpos(): Empty needle
+---------------------------------------------------------------
+[ 2019-03-12T17:51:34+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-12T17:52:00+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.029002s ]
+[ error ] [8]未定义数组索引: ct_time
+---------------------------------------------------------------
+[ 2019-03-12T17:55:18+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.030001s ]
+---------------------------------------------------------------
+[ 2019-03-12T17:55:22+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',0,'2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552384521admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',0,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552384521admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',0,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552384521admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',0,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552384521admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',0,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552384521admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',0,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552384521admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',0,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552384521admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',0,'2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552384521admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',0,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552384521admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552384521admin' ORDER BY `id` ASC [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_communicate` (`ct_user` , `communicate_time` , `content` , `resume_id`) VALUES ( '吴梦','2018.01.01','沟通内容1',6918 ) , ( '吴梦','2018.01.01','沟通内容2',6919 ) , ( '吴梦','2018.01.01','沟通内容3',6920 ) , ( '吴梦','2018.01.01','沟通内容33',6920 ) , ( '吴梦','2018.01.01','沟通内容4',6921 ) , ( '吴梦','2018.01.01','沟通内容44',6921 ) , ( '吴梦','2018.01.01','沟通内容5',6922 ) , ( '吴梦','2018.01.01','沟通内容55',6922 ) , ( '吴梦','2018.01.01','沟通内容6',6923 ) , ( '吴梦','2018.01.01','沟通内容66',6923 ) , ( '吴梦','2018.01.01','沟通内容7',6924 ) , ( '吴梦','2018.01.01','沟通内容77',6924 ) , ( '吴梦','2018.01.01','沟通内容8',6925 ) , ( '吴梦','2018.01.01','沟通内容88',6925 ) , ( '吴梦','2018.01.01','沟通内容9',6926 ) , ( '吴梦','2018.01.01','沟通内容99',6926 ) [ RunTime:0.086005s ]
+---------------------------------------------------------------
+[ 2019-03-12T17:55:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?ct_time=2019-03-13&pageIndex=1&pageSize=10&_d=1552384522475
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T18:19:50+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.033002s ]
+[ error ] [2]preg_replace(): No ending delimiter '/' found
+---------------------------------------------------------------
+[ 2019-03-12T18:20:20+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:3.072175s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:2.961169s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:20:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:7.359421s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:5.770330s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.428024s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:20:54+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.735042s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.163009s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:2.232128s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:21:48+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:22:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552386130admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552386130admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552386130admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552386130admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552386130admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552386130admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552386130admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552386130admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552386130admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552386130admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] INSERT INTO `rs_communicate` (`ct_user` , `communicate_time` , `content` , `resume_id`) VALUES ( '吴梦','2018.01.01','沟通内容1',6927 ) , ( '吴梦','2018.01.01','沟通内容2',6928 ) , ( '吴梦','2018.01.01','沟通内容3',6929 ) , ( '吴梦','2018.01.01','沟通内容33',6929 ) , ( '吴梦','2018.01.01','沟通内容4',6930 ) , ( '吴梦','2018.01.01','沟通内容44',6930 ) , ( '吴梦','2018.01.01','沟通内容5',6931 ) , ( '吴梦','2018.01.01','沟通内容55',6931 ) , ( '吴梦','2018.01.01','沟通内容6',6932 ) , ( '吴梦','2018.01.01','沟通内容66',6932 ) , ( '吴梦','2018.01.01','沟通内容7',6933 ) , ( '吴梦','2018.01.01','沟通内容77',6933 ) , ( '吴梦','2018.01.01','沟通内容8',6934 ) , ( '吴梦','2018.01.01','沟通内容88',6934 ) , ( '吴梦','2018.01.01','沟通内容9',6935 ) , ( '吴梦','2018.01.01','沟通内容99',6935 ) [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:22:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?ct_time=2019-03-13&pageIndex=1&pageSize=10&_d=1552386130606
+[ error ] [0]致命错误: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-03-12T18:23:00+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1552386179616
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-06 00:00:00' and '2019-03-06 23:59:59' and ct_user='admin' ) [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-07 00:00:00' and '2019-03-07 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-08 00:00:00' and '2019-03-08 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-09 00:00:00' and '2019-03-09 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-10 00:00:00' and '2019-03-10 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-11 00:00:00' and '2019-03-11 23:59:59' and ct_user='admin' ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' ) LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' and ct_user='admin' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-03-12 00:00:00' and '2019-03-12 23:59:59' and ct_user='admin' ) [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-12T18:23:03+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552386183088
+[ error ] [0]致命错误: Class 'SphinxClient' not found

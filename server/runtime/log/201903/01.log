@@ -1,0 +1,635 @@
+---------------------------------------------------------------
+[ 2019-03-01T09:14:45+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.028001s ]
+---------------------------------------------------------------
+[ 2019-03-01T09:15:02+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T09:24:16+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.029002s ]
+[ error ] [0]致命错误: Class 'PhpOffice\PhpWord\TextRun' not found
+---------------------------------------------------------------
+[ 2019-03-01T09:25:31+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027002s ]
+[ error ] [0]致命错误: Call to undefined method PhpOffice\PhpWord\TemplateProcessor::setComplexBlock()
+---------------------------------------------------------------
+[ 2019-03-01T09:55:21+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T10:18:32+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+[ error ] [0]类型错误: Argument 2 passed to PhpOffice\PhpWord\TemplateProcessor::setComplexBlock() must be an instance of PhpOffice\PhpWord\Element\AbstractElement, string given, called in C:\Users\Administrator\Desktop\job\resume\server\application\index\controller\Resume.php on line 1837
+---------------------------------------------------------------
+[ 2019-03-01T10:28:29+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T10:30:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T10:37:53+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+[ error ] [2]Missing argument 1 for PhpOffice\PhpWord\Element\Section::__construct(), called in C:\Users\Administrator\Desktop\job\resume\server\application\index\controller\Resume.php on line 1866 and defined
+---------------------------------------------------------------
+[ 2019-03-01T10:41:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+[ error ] [0]致命错误: Call to undefined method PhpOffice\PhpWord\Element\Text::addText()
+---------------------------------------------------------------
+[ 2019-03-01T10:44:04+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.028002s ]
+[ error ] [0]致命错误: Class 'PhpOffice\PhpWord\Writer\Word2007\Element\Section' not found
+---------------------------------------------------------------
+[ 2019-03-01T10:46:54+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T10:49:47+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T10:59:18+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:10:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:13:31+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.073004s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:42:17+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.028001s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:44:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:47:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:48:14+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:54:49+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T11:58:20+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-03-01T12:08:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.031001s ]
+---------------------------------------------------------------
+[ 2019-03-01T12:08:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:34:17+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6846&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6846 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:47:33+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.030002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:47:55+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:48:11+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:48:20+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:48:28+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.031002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:57:35+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T13:59:50+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=676&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 676 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:00:08+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:02:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:04:14+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:05:01+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.028001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:05:58+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=767&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 767 LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:25:15+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=1&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063004s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.081005s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:26:20+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=1&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:32:05+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=1&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:32:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=1&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:49:13+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=787&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 787 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:49:48+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=788&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 788 LIMIT 1 [ RunTime:0.028001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:53:45+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=788&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 788 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:54:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=788&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 788 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:55:29+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=788&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 788 LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:57:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T14:58:50+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:00:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:01:00+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:01:44+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:02:20+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:02:28+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:03:57+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.029001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:20:37+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1551424836896
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:20:40+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze?_d=1551424840887
+[ error ] [8]未定义数组索引: 在校情况
+---------------------------------------------------------------
+[ 2019-03-01T15:23:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze?_d=1551425000991
+[ error ] [8]未定义数组索引: 在校情况
+---------------------------------------------------------------
+[ 2019-03-01T15:23:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze?_d=1551425031961
+[ error ] [8]未定义变量: parm
+---------------------------------------------------------------
+[ 2019-03-01T15:24:00+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1551425040331
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:24:04+08:00 ] 127.0.0.1 POST www.job.com/api/resume/analyze?_d=1551425044071
+[ error ] [8]未定义变量: parm
+---------------------------------------------------------------
+[ 2019-03-01T15:26:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9F%AF%E5%B3%B0&_d=1551425167529
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '柯峰' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:07+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add?_d=1551425167670
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '柯峰'  AND `phone` = '18305186853'  AND `email` = '2063029174@qq.com' LIMIT 1 [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:12+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9F%AF%E5%B3%B0&_d=1551425172269
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '柯峰' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:12+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add?_d=1551425172374
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '柯峰'  AND `phone` = '18305186853'  AND `email` = '2063029174@qq.com' LIMIT 1 [ RunTime:0.047002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:16+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9F%AF%E5%B3%B0&_d=1551425176122
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '柯峰' ORDER BY `mfy_time` DESC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:16+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add?_d=1551425176280
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '柯峰'  AND `phone` = '18305186853'  AND `email` = '2063029174@qq.com' LIMIT 1 [ RunTime:0.047003s ]
+[ error ] [0]数据表字段不存在:[atSchool]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:36+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1551425196594
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.116007s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9F%AF%E5%B3%B0&_d=1551425202616
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '柯峰' ORDER BY `mfy_time` DESC [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:42+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add?_d=1551425202727
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '柯峰'  AND `phone` = '18305186853'  AND `email` = '2063029174@qq.com' LIMIT 1 [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:48+08:00 ] 127.0.0.1 GET www.job.com/api/resume/check_name?name=%E6%9F%AF%E5%B3%B0&_d=1551425207964
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`sex`,`age`,`work_year`,`email`,`expected_money`,`nearest_unit`,`nearest_job`,`english`,`expected_address`,`school`,`educational`,`speciality`,`mfy_time` FROM `rs_resume` WHERE  `name` = '柯峰' ORDER BY `mfy_time` DESC [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:26:48+08:00 ] 127.0.0.1 POST www.job.com/api/resume/add?_d=1551425208086
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `name` = '柯峰'  AND `phone` = '18305186853'  AND `email` = '2063029174@qq.com' LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `rs_resume` (`name` , `status` , `phone` , `email` , `sex` , `age` , `work_year` , `birthday` , `nearest_job` , `nearest_unit` , `expected_money` , `expected_address` , `selfEvaluation` , `workExperience` , `projectExperience` , `graduation_time` , `school` , `speciality` , `educational` , `educational_background` , `english` , `skillExpertise` , `certificate` , `source` , `expected_job` , `ct_user` , `expected_money_start` , `expected_money_end`) VALUES ('柯峰' , '目前正在找工作' , '18305186853' , '2063029174@qq.com' , '男' , '26' , '3' , '1992年5月28日' , '软件工程师' , '中软国际科技服务有限公司' , '20-30' , '深圳' , '本人积极进取，具有较高的领悟力，洞察力和快速的学习能力，对新事物接受速度快，具备良好的心理素质和抗压能力。做事认真负责，精益求精，敢于迎接挑战，勇于创新。已经具有中高级工程师的水平。
+
+' , '工作经验
+2017/12-至今	中软国际科技服务有限公司 (1年 3个月 ) 
+	计算机软件|上市公司
+CBS	软件工程师
+工作描述：	1.根据SE提出业务的需求做需求分析、设计以及代码实现；
+2.协助完成项目组的软件开发工作以及带领新同事；
+3.完成上级领导交办的其他工作任务；
+2016/10-2017/8	软通动力科技有限公司 (10个月 ) 
+	计算机软件|10000人以上|上市公司
+HW2012实验室实施部	Java开发工程师
+工作描述：	1.根据美工交互图以及业务的需求做需求分析、设计以及代码实现；
+2.协助完成项目组的软件开发工作和版本正常上线；
+3.完成上级领导交办的其他工作任务；
+2015/7-2016/10	上海汉得信息技术股份有限公司 (1年 3个月 ) 
+	互联网/电子商务|1000-5000人|上市公司
+海外事业部	java开发工程师
+工作描述：	1.参与了项目需求分析和设计
+2.负责核心模块设计和代码编写
+3.完成上级领导交办的其他工作任务；
+' , '项目经验
+2017/4-2017/8	My Product
+所属公司：	软通动力科技有限公司
+项目描述：	开发环境：mysql, Tomcat8.0, JDK1.8, Eclipse，Git,
+软件架构：SpringMVC + Spring + MyBatis + MySQL＋JQUERY＋Dubbo+DragonCloud
+该项目是华为的一个子项目，项目名称就是我的产品（包括网站和APP），连接在华为首页企业和运营商的官网上，主要是提供给华为用户相关产品、设备以及维护信息的相关业务操作的服务。整体架构采用的是微服务架构。包括了网站的实现以及app端的后端的实现。主要模块有我的产品、设备（部件）、维保信息、维护信息、维护记录等等。
+责任描述：	我负责了设备列表的实现、设备详情的实现、批量上传设备资料信息的实现。以及维护记录和维护信息的实现。主要涉及的技术有图片的上传、下载，Excel的解析和生成excel文件等。
+	
+2016/10-2017/8	企业技术支持
+所属公司：	软通动力科技有限公司
+项目描述：	开发环境：ORACLE, JETTY, JDK1.7, SpringToolSuite，SVN
+软件架构：SpringMVC + Spring + MyBatis + ORACLE＋JQUERY＋RESTFUL+ACTIVEMQ
+项目描述：该项目是华为的一个企业业务的APP产品，主要是提供华为企业相关业务产品的信息查询和介绍等，里面包含了服务支持中心、我的在线工具（应用）、我的收藏、公告、产品、社区、签到、意见反馈、我的软件申请等等模块。
+责任描述：	企业技术支持与运营商是同一个后台管理系统。我负责了在线工具后台的实现。以及集成公司级在线工具模块的实现。涉及到的技术有URL请求。
+	
+2016/10-2017/8	Tech Support
+所属公司：	软通动力科技有限公司
+项目描述：	开发环境：ORACLE, JETTY, JDK1.7, SpringToolSuite,SVN
+软件架构：SpringMVC + Spring + MyBatis + ORACLE＋JQUERY＋RESTFUL+ACTIVEMQ
+该项目是华为的一个运营商业务的产品，主要是提供与运营商相关业务的产品信息的查询和介绍等。主要包括了我的工具（应用）、我的公告、我的产品、社区、签到、意见反馈等等模块。
+责任描述：	我负责了在线工具后台的实现。其中在线工具后台包括了在线工具的创建、编辑、删除查询以及与产品的关联等。涉及的技术有图片的上传、下载、页面的局部刷新、树形菜单的生成。还负责了集成公司级在线工具模块的实现。涉及到的技术有URL请求。以及负责了案例收藏、文档查询以及文档资源的添加等模块的实现。
+	
+2016/7-2016/10	远程医疗平台
+所属公司：	上海汉得信息技术股份有限公司
+项目描述：	开发环境：MySQL, Tomcat6.0, JDK1.6, EclipseEE
+软件架构：采用分层体系架构，并采用 以下开源框架：SpringMVC + Spring + hibernate+ MySQL， EasyUI
+该项目主要是解决偏远地区的医疗机构远程会诊需求。系统分为前端和后端两部分，前端部分供患者了解医院的信息，医生基本情况及患者预约就诊及支付费用；后端部分主要供医院了解患者情况、审核患者资料、安排就医、医生调度、医生登录了解患者信息、诊断等。本系统中主要模块有患者模块、会诊推荐医生模块、医药代表模块、会诊咨询医生模块、后台管理系统..等。
+责任描述：	主要是负责患者模块、会诊推荐医生等模块的实现。其中涉及到的技术有：验证码的实现、分页技术的实现、图片视频的上传、图片视频的下载、局部刷新等。
+	
+2007/12-至今	华为CBS5.5(融合计费系统)基线UPC模块
+所属公司：	中软国际科技服务有限公司
+项目描述：	华为融合计费解决方案（CBS R5）基于最新的行业动态和最佳行业实践设计、开发，在继承了之前版本的功能、优点的基础上，重新设计了系统架构，可以更加灵活、智能地应对用户以及市场的需求。
+CBS R5解决方案致力于为运营商提供灵活的计费能力，帮助其应对现在以及未来不同的商业需求，实现敏捷的业务拓展。
+UPC（统一产品管理）主要功能是提供各种数据配置，如销售品、产品、计划、策略等等的配置；并提供各种配置手段，如工程化，导入导出，界面配置，restful接口接入配置等。本项目结构上分为表现层、业务层和数据访问层，层次间的依赖关系自下到上。采用的技术有Spring，Struts2，DOJO, jQuery等。其中表现层使用华为的BME框架；service层封装业务流程，为适应业务的变更，每一业务模块均有专门的接口及实现类；数据访问层借助于MyBatis实现。事务部分利用Spring的声明式事务管理。对于restful接入的业务则采用职责链对各个业务进行隔离，不同的业务执行不同的链。
+责任描述：	主要负责了销售品组模块的实现、信控规则模块的实现。以及销售品、产品、计划、策略、免费资源类型、资金账目类型、累计量类型、销售品优先级、restful接口等部分功能的实现。涉及到的技有华为平台自研的视图框架BME、sping、以及自研的持久层框架DASUtil、
+jquery、sql优化、resultful 接口、组件化(dojo)、xml、json、struts、shell脚本等。
+	
+' , '2016' , '南京农业大学' , '计算机网络' , '本科' , '2012/9-2016/6
+南京农业大学
+计算机网络
+本科' , '大学英语四级' , '技能特长 （包括IT技能、语言能力、证书、成绩、培训经历）
+▲技能/语言
+Java
+精通
+英语
+良好
+▲证书
+2013/6	大学英语四级 （４２５）
+' , ' ' , '前程无忧' , 'Java' , 'admin' , 20000 , 30000) [ RunTime:0.076004s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:34:30+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6847&_d=1551425670369
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:48:33+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:50:09+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:50:49+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:51:24+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:52:26+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=789&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 789 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:53:41+08:00 ] 127.0.0.1 GET www.job.com/api/resume/get_by_id?id=6847&_d=1551426821246
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:54:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T15:54:30+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:23:26+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:24:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:24:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=avo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:25:17+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:25:44+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.029001s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:31:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:32:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.026001s ]
+[ error ] [0]致命错误: Call to undefined function app\index\controller\htmlspecialchars_encode()
+---------------------------------------------------------------
+[ 2019-03-01T16:32:59+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T16:35:25+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=782&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 782 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:04:36+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=781&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 781 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:07:00+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:11:47+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:48:59+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:50:21+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:50:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:50:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:50:22+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:50:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:51:58+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-03-01T17:55:39+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=6847&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 6847 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:10:02+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:25:21+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:33:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:33:08+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.042002s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:38:27+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:38:42+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:40:00+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:46:23+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:46:36+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:47:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:48:14+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:48:45+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-03-01T18:48:51+08:00 ] 127.0.0.1 GET www.job.com/api/resume/export?resume_id=174&type=tonghe
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_resume` WHERE  `id` = 174 LIMIT 1 [ RunTime:0.025002s ]

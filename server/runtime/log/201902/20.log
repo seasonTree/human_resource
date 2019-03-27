@@ -1,0 +1,1370 @@
+---------------------------------------------------------------
+[ 2019-02-20T14:23:16+08:00 ] 127.0.0.1 GET www.job.com/
+[ error ] [0]æ¨¡æ¿æ–‡ä»¶ä¸å­˜åœ¨:C:\Users\Administrator\Desktop\job\resume/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-02-20T14:57:33+08:00 ] 127.0.0.1 GET www.job.com/
+[ error ] [0]æ¨¡æ¿æ–‡ä»¶ä¸å­˜åœ¨:C:\Users\Administrator\Desktop\job\resume/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-02-20T14:58:24+08:00 ] 127.0.0.1 POST www.job.com/api/user/login?_d=1550645880365
+[ error ] [2006]SQLSTATE[HY000] [2006] MySQL server has gone away
+---------------------------------------------------------------
+[ 2019-02-20T14:58:25+08:00 ] 127.0.0.1 POST www.job.com/api/user/login?_d=1550645893636
+[ sql ] [ DB ] CONNECT:[ UseTime:0.603035s ] mysql:host=192.168.199.134;port=3306;dbname=resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `rs_user`  SET `token` = '74ac41cec1540254c48387fe757705ebafc8b0e0bc0e0e4a10773004459dd6bf'  WHERE  `id` = 1 [ RunTime:0.067004s ]
+---------------------------------------------------------------
+[ 2019-02-20T14:59:22+08:00 ] 127.0.0.1 POST www.job.com/api/user/login?_d=1550645962135
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `rs_user`  SET `token` = '6f877762aaec4a59e4cf5231a37d399b029478be8b1c09aa818de3012ab626cf'  WHERE  `id` = 1 [ RunTime:0.051003s ]
+---------------------------------------------------------------
+[ 2019-02-20T14:59:23+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550645963508
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=192.168.199.134;port=3306;dbname=resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T14:59:23+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1550645963716
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time > '2019-02-19 00:00:00' and ct_time < '2019-02-19 23:59:59' ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time > '2019-02-11 00:00:00' and ct_time < '2019-02-17 23:59:59' ) LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( ct_time > '2019-02-19 00:00:00' and ct_time < '2019-02-19 23:59:59' ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( ct_time > '2019-02-11 00:00:00' and ct_time < '2019-02-17 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T14:59:28+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550645968388
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T15:06:40+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1550646400145
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:06:43+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-2-11&dtto=2019-2-17&_d=1550646403675
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'Eleanor' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'Sayaka' ) [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:06:55+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646412754
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.034001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:06:57+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646414130
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:06:59+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646414314
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.038003s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.030002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:02+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646414489
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:04+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646414666
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:06+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-01-01&dtto=2019-03-31&_d=1550646416810
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 25 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 39 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 44 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 60 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 62 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 64 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 68 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 69 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 70 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 71 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 72 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 75 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 78 LIMIT 1 [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 80 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 81 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 82 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 83 LIMIT 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 85 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-01-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 42 LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 55 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 58 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 67 LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:10+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550646430534
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:10+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1550646430760
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:14+08:00 ] 127.0.0.1 GET www.job.com/api/user/list?pageIndex=1&pageSize=10&_d=1550646434737
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_user` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:16+08:00 ] 127.0.0.1 GET www.job.com/api/permission/list?_d=1550646436174
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` ORDER BY `idx` ASC,`id` ASC [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:17+08:00 ] 127.0.0.1 GET www.job.com/api/role/list?pageIndex=1&pageSize=10&_d=1550646437612
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_role` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_role` LIMIT 0,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_role` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:18+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1550646438895
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:22+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-2-11&dtto=2019-2-17&_d=1550646442610
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'Eleanor' ) [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-2-11' and '2019-2-17' and ct_user = 'Sayaka' ) [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:07:31+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-03-31&_d=1550646451289
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-03-31' and ct_user = 'admin' ) [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-03-31' and ct_user = 'Eleanor' ) [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 73 LIMIT 1 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-03-31' and ct_user = 'Sayaka' ) [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `rs_resume` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:08:36+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550646516675
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T15:12:43+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550646763359
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:12:43+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550646763693
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T15:38:10+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550648290508
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:38:10+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550648290844
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T15:39:33+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550648373389
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.029001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:39:33+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550648373764
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T15:55:04+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550649304830
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:55:05+08:00 ] 127.0.0.1 GET www.job.com/api/dashboard/get?_d=1550649305013
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time > '2019-02-19 00:00:00' and ct_time < '2019-02-19 23:59:59' ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_resume` WHERE  ( ct_time > '2019-02-11 00:00:00' and ct_time < '2019-02-17 23:59:59' ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( ct_time > '2019-02-19 00:00:00' and ct_time < '2019-02-19 23:59:59' ) LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_communicate` WHERE  ( ct_time > '2019-02-11 00:00:00' and ct_time < '2019-02-17 23:59:59' ) LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:55:08+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T15:57:37+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:01:07+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550649667040
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:01:07+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550649667428
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T16:03:10+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550649790144
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:04:08+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550649848218
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name` FROM `rs_job_sel` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:11:26+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550650286223
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+[ error ] [2]array_column() expects parameter 1 to be array, object given
+---------------------------------------------------------------
+[ 2019-02-20T16:11:51+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550650311350
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:13:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550650410714
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:15:53+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_by_id
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=1 ) LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:18:21+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550650700941
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:18:21+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550650701297
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T16:18:23+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all?_d=1550650703022
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:25:39+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550651138967
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:25:39+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550651139181
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:51+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550651211234
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:51+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550651211452
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:54+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550651214134
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 10,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:55+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550651215615
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 20,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:56+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550651216584
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 30,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:26:59+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550651218999
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:01+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550651221202
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 10,10 [ RunTime:0.055004s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:05+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550651223264
+[ sql ] [ DB ] CONNECT:[ UseTime:1.677096s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 20,10 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.039002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:07+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550651226934
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 30,10 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:09+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550651229390
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 20,10 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:10+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550651230232
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 10,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:27:11+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550651231110
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:29:23+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550651363871
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=1 ) LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:29:27+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550651367118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=7 ) LIMIT 1 [ RunTime:0.031002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:50:13+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550652613796
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:50:14+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550652614021
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:50:16+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550652616309
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 30,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:50:18+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550652618452
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` LIMIT 0,10 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:21+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550652741399
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:21+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550652741607
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550652750376
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.037002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:31+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550652751406
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:32+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550652752209
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:52:34+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550652754122
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:53:32+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/add?_d=1550652812475
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `rs_job_sel` (`job_name` , `ct_user`) VALUES ('æµ‹è¯•' , 'admin') [ RunTime:0.051003s ]
+---------------------------------------------------------------
+[ 2019-02-20T16:53:40+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550652820558
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:47:02+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656022017
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.054003s ]
+[ error ] [8]æœªå®šä¹‰å˜é‡: input
+---------------------------------------------------------------
+[ 2019-02-20T17:47:16+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656036241
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] UPDATE `rs_job_sel`  SET `job_name` = 'æµ‹è¯•d' , `mfy_user` = 'admin'  WHERE  `id` = 38 [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.029001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:47:20+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550656040304
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:48:46+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656125972
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] UPDATE `rs_job_sel`  SET `job_name` = 'æµ‹è¯•d' , `mfy_user` = 'admin'  WHERE  `id` = 38 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:51:45+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550656305585
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:51:47+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656307026
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:51:52+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656312221
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `rs_job_sel`  SET `job_name` = 'æµ‹è¯•' , `mfy_user` = 'admin'  WHERE  `id` = 38 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:51:56+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550656316050
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:51:57+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550656317198
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068004s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:02+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656321908
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:05+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656325603
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:09+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550656327539
+[ sql ] [ DB ] CONNECT:[ UseTime:2.157123s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.036003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.056003s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:14+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656333907
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:17+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656336908
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:19+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656339131
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:22+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656341948
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.069004s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:28+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656344051
+[ sql ] [ DB ] CONNECT:[ UseTime:0.670039s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:3.469198s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:31+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656349722
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194011s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:1.915109s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:36+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656356155
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:40+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656359995
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:52:45+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656365229
+[ sql ] [ DB ] CONNECT:[ UseTime:0.189011s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.183010s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:04+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656383890
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124007s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:06+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656386724
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.025001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:09+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656388914
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.423024s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:11+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656391433
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082005s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.091005s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:14+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656394161
+[ sql ] [ DB ] CONNECT:[ UseTime:0.161009s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:45+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550656425442
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:47+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656427372
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:49+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656429082
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:53:50+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656430379
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:55:42+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550656541987
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:55:42+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656542213
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047003s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:55:48+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550656548163
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:55:54+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=3&pageSize=10&_d=1550656553929
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 20,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:56:00+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550656560372
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:56:18+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656578709
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:57:52+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550656672428
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T17:57:55+08:00 ] 127.0.0.1 GET www.job.com/api/user/list?pageIndex=1&pageSize=10&_d=1550656675169
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_user` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T17:57:58+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550656678624
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:04:43+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550657083390
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:04:45+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550657085699
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:04:47+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657087204
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.022001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'æµ‹è¯•' in 'where clause'
+---------------------------------------------------------------
+[ 2019-02-20T18:05:44+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657144505
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.026002s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'æµ‹è¯•' in 'where clause'
+---------------------------------------------------------------
+[ 2019-02-20T18:07:39+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657238162
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+---------------------------------------------------------------
+[ 2019-02-20T18:08:36+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657295227
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+---------------------------------------------------------------
+[ 2019-02-20T18:09:09+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657328203
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+---------------------------------------------------------------
+[ 2019-02-20T18:09:52+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657371550
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+---------------------------------------------------------------
+[ 2019-02-20T18:10:13+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657382643
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+---------------------------------------------------------------
+[ 2019-02-20T18:10:14+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550657414836
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.031001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:10:15+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550657415059
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:10:20+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550657420018
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:10:21+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550657421499
+[ sql ] [ DB ] CONNECT:[ UseTime:0.208012s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.061004s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:10:23+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550657423698
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:10:25+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657425514
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.023001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'æµ‹è¯•' in 'where clause'
+---------------------------------------------------------------
+[ 2019-02-20T18:10:44+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657444533
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.047002s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'æµ‹è¯•' in 'where clause'
+---------------------------------------------------------------
+[ 2019-02-20T18:10:53+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657453627
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.025002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:11:37+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657497298
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149008s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  `job_name` = 'æµ‹è¯•' LIMIT 1 [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:11:45+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657505489
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  `job_name` = 'æµ‹è¯•a' LIMIT 1 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] UPDATE `rs_job_sel`  SET `job_name` = 'æµ‹è¯•a' , `mfy_user` = 'admin'  WHERE  `id` = 38 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.051002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:11:51+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550657511391
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:11:54+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550657513882
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:11:57+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657516852
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081004s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  `job_name` = 'b' LIMIT 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] UPDATE `rs_job_sel`  SET `job_name` = 'b' , `mfy_user` = 'admin'  WHERE  `id` = 38 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:12:01+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/get_by_id?_d=1550657521113
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`job_name`,`mfy_time` FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.616035s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:12:03+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/edit?_d=1550657523060
+[ sql ] [ DB ] CONNECT:[ UseTime:0.191011s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  ( id=38 ) LIMIT 1 [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` WHERE  `job_name` = 'b' LIMIT 1 [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:31:07+08:00 ] 127.0.0.1 POST www.job.com/api/position_cate/del?_d=1550658666923
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] DELETE FROM `rs_job_sel` WHERE  `id` = 38 [ RunTime:0.032002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:31:13+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550658673825
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.030002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:31:14+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550658674051
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:31:16+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=4&pageSize=10&_d=1550658676070
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 30,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:31:20+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=2&pageSize=10&_d=1550658679697
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086005s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 10,10 [ RunTime:1.008058s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:41:19+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550659279867
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:41:20+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550659280092
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:41:30+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1550659290125
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_permission` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_permission` [ RunTime:0.024002s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:41:30+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/list?pageIndex=1&pageSize=10&_d=1550659290339
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_job_sel` ORDER BY `mfy_time` DESC LIMIT 0,10 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `rs_job_sel` LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:41:40+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550659300595
+[ error ] [0]è‡´å‘½é”™è¯¯: Class 'SphinxClient' not found
+---------------------------------------------------------------
+[ 2019-02-20T18:41:43+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1550659303353
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:44:43+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:46:23+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-02-20T18:46:25+08:00 ] 127.0.0.1 GET www.job.com/api/position_cate/get_all
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `rs_job_sel` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `job_name` FROM `rs_job_sel` [ RunTime:0.085005s ]
