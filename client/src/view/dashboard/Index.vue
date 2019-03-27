@@ -27,7 +27,7 @@ export default {
             that.$api.dashboard
                 .get()
                 .then(res => {
-                    if (res.code == 200) {
+                    if (res.code == 0) {
                     } else {
                         that.$message.error(
                             res.msg || "获取数据失败，请刷新后重试."

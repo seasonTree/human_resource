@@ -172,7 +172,7 @@ export default {
                 that.$api[that.apiType]
                     [that.getDataMethod](params)
                     .then(res => {
-                        if (res.code == 200) {
+                        if (res.code == 0) {
                             if (res.data.row) {
                                 that.tdata = res.data.row;
                             } else {
@@ -239,7 +239,7 @@ export default {
                 that.$api[that.apiType]
                     [that.getByIDMethod](params)
                     .then(res => {
-                        if (res.code == 200) {
+                        if (res.code == 0) {
                             that.currentEditItem = res.data;
                             that.editDialog = true;
                         } else {
@@ -294,7 +294,7 @@ export default {
                     that.$api[that.apiType]
                         [that.delMethod](params)
                         .then(res => {
-                            if (res.code == 200) {
+                            if (res.code == 0) {
                                 that.$message({
                                     message: "删除成功.",
                                     type: "success",
