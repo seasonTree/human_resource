@@ -4,3 +4,6 @@ node_modules/
 package-lock.json
 client/dist/
 yarn.lock
+#忽略缓存文件和数据库设置
+server/runtime
+server/config/database.php
