@@ -1,3 +1,0 @@
----------------------------------------------------------------
-[ 2019-02-22T19:20:04+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1550834404018
-[ error ] [0]致命错误: Class 'SphinxClient' not found
