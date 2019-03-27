@@ -865,7 +865,7 @@
 [ 2019-03-13T17:42:32+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1552470152206
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-13T17:42:35+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552470155838
 [ error ] [0]致命错误: Class 'SphinxClient' not found
@@ -873,14 +873,14 @@
 [ 2019-03-13T17:42:37+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1552470157627
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009001s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-13T17:42:40+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-3-4&dtto=2019-3-10&_d=1552470159623
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.089005s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-3-4' and '2019-3-10' and ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-3-4' and '2019-3-10' and ct_user = 'Eleanor' ) [ RunTime:0.025001s ]
@@ -896,7 +896,7 @@
 [ 2019-03-13T17:42:51+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2019-3-4&dtto=2019-3-10&_d=1552470171147
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-3-4' and '2019-3-10' and ct_user = 'admin' ) [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-3-4' and '2019-3-10' and ct_user = 'Eleanor' ) [ RunTime:0.024001s ]

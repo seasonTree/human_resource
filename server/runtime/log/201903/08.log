@@ -63,7 +63,7 @@
 [ 2019-03-08T10:06:32+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1552010792534
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.011000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-08T10:06:36+08:00 ] 127.0.0.1 GET www.job.com/api/resume/list?pageIndex=1&pageSize=10&_d=1552010796083
 [ error ] [0]致命错误: Class 'SphinxClient' not found
@@ -291,17 +291,17 @@
 [ 2019-03-08T15:16:43+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-08T15:17:13+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-08T15:17:26+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029446admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029446admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029446admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029446admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029446admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029446admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029446admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029446admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029446admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.045003s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029446admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
@@ -311,7 +311,7 @@
 [ 2019-03-08T15:20:43+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029642admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029642admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029642admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029642admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029642admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029642admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029642admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029642admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029642admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.045003s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029642admin' ORDER BY `id` ASC [ RunTime:0.042002s ]
@@ -319,7 +319,7 @@
 [ 2019-03-08T15:21:18+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.033002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029678admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029678admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029678admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029678admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029678admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029678admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029678admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029678admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029678admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.067004s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029678admin' ORDER BY `id` ASC [ RunTime:0.048003s ]
@@ -329,7 +329,7 @@
 [ 2019-03-08T15:24:30+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552029869admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552029869admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552029869admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552029869admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552029869admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552029869admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552029869admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552029869admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552029869admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.052003s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552029869admin' ORDER BY `id` ASC [ RunTime:0.043003s ]
@@ -347,12 +347,12 @@
 [ 2019-03-08T15:33:01+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-08T15:33:07+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( 'Lily','2018-01-01','测试','1','1','1','武汉东湖学院','大专','2014','3','前程无忧','1552030386admin',NULL,NULL,'顺丰' ) , ( 'Lily','2018-01-01','测试','2','1','1','湖南农业大学','本科','2014','3','前程无忧','1552030386admin','沟通2','2沟通','顺丰' ) , ( 'Lily','2018-01-01','测试','3','1','1','湘潭职业技术学院','大专','2010','4','前程无忧','1552030386admin','沟通3','3沟通','顺丰' ) , ( 'Lily','2018-01-01','测试','4','1','1','北京理工大学珠海学院','本科','2014','3.5','BOSS直聘','1552030386admin','沟通4',NULL,'顺丰' ) , ( 'Lily','2018-01-01','前端','5','1','1','河南工业大学','本科','2015','3','前程无忧','1552030386admin','沟通5','5沟通','顺丰' ) , ( 'Lily','2018-01-01','前端','6','1','1','惠州学院','大专','2014','2','前程无忧','1552030386admin','沟通6',NULL,'顺丰' ) , ( 'Lily','2018-01-01','前端','7','1','1','广东青年职业学院','大专','2014','3.5','前程无忧','1552030386admin','沟通7','7沟通','顺丰' ) , ( 'Lily','2018-01-01','前端','8','1','1','黑龙江大学','大专','2014','4','前程无忧','1552030386admin','沟通8','8沟通','顺丰' ) , ( 'Lily','2018-01-01','java','9','1','1','中央广播电视大学','大专','2013','6','前程无忧','1552030386admin','沟通9',NULL,'乐钦' ) [ RunTime:0.045002s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552030386admin' ORDER BY `id` ASC [ RunTime:0.023001s ]
@@ -420,12 +420,12 @@
 [ 2019-03-08T18:36:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-08T18:45:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦','2018.01.01','测试','1','1234567890','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552041941admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552041941admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦','2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552041941admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦','2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552041941admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦','2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552041941admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦','2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552041941admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦','2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552041941admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦','2018.01.01','前端','8','1234567897','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552041941admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦','2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552041941admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046003s ]
 [ sql ] [ SQL ] SELECT `id` FROM `rs_resume` WHERE  `batch_id` = '1552041941admin' ORDER BY `id` ASC [ RunTime:0.042002s ]

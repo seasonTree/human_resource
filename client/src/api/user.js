@@ -9,7 +9,7 @@ const prefix = '/user';
  * @method post
  * @param {Object} data 用户登录数据
  *      {
- *          uname: '用户名'
+ *          username: '用户名'
  *          password: '密码'
  *      }
  * 
@@ -57,7 +57,7 @@ export function logout(data) {
  *      msg: '提示信息',
  *      data: {
  *              id: 1,
- *              uname: 'aaaa',
+ *              username: 'aaaa',
  *              status: 1, //禁止   
  *          }
  * }
@@ -113,7 +113,7 @@ export function changePassword(data) {
  *          row: [
  *              {
  *                  id: 1,
- *                  uname: 'aaaa',
+ *                  username: 'aaaa',
  *                  personal_name: '张三',
  *                  phone: 136666666,
  *                  ct_user: '创建人'
@@ -122,7 +122,7 @@ export function changePassword(data) {
  *              },
  *              {
  *                 id: 2,
- *                  uname: 'bbb',
+ *                  username: 'bbb',
  *                  personal_name: '张四',
  *                  phone: 136666666,
  *                  ct_user: '创建人'
@@ -199,7 +199,7 @@ export function getByID(data) {
  * @method post
  * @param {Object} data 发送的数据
  *      {
- *          uname： '用户名', ^[a-zA-Z][\da-zA-Z]， 用户必须是字母或数字，并且以字母开头
+ *          username： '用户名', ^[a-zA-Z][\da-zA-Z]， 用户必须是字母或数字，并且以字母开头
  *          personal_name: '姓名',
  *          phone: 136666666,
  *          passwd: '密码'
@@ -312,12 +312,12 @@ export function del(data) {
  *      data: [
  *          {
  *              id: 1,
- *              uname: 'aaaa',
+ *              username: 'aaaa',
  *              status: 1, //禁止   
  *          },
  *          {
  *             id: 2,
- *              uname: 'bbb',
+ *              username: 'bbb',
  *              status: 0, //允许
  *          },
  *      ]

@@ -21,7 +21,7 @@ create table hs_user
 	unique index `user_username` (`username`)
 ) engine=InnoDB;
 
-insert into rs_user(username, passwd) values('admin', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92');
+insert into hs_user(username, passwd) values('admin', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92');
 
 -- -----------------------------------------------------
 -- 地区
@@ -37,8 +37,7 @@ create table hs_place
 	ct_time datetime default CURRENT_TIMESTAMP not null comment '创建时间',
 	mfy_user varchar(64) default '' comment '修改人',
 	mfy_time datetime default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP not null comment '修改时间',
-	token varchar(255) not null default '' comment '登录token',
-	unique index `place_prefix` (`prefix`)
+	unique index `place_prefix` (`pl_prefix`)
 ) engine=InnoDB;
 
 -- -----------------------------------------------------
@@ -56,7 +55,6 @@ create table hs_project
 	ct_time datetime default CURRENT_TIMESTAMP not null comment '创建时间',
 	mfy_user varchar(64) default '' comment '修改人',
 	mfy_time datetime default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP not null comment '修改时间',
-	token varchar(255) not null default '' comment '登录token',
 	unique index `project_pj_no` (`pj_no`)
 ) engine=InnoDB;
 
@@ -84,18 +82,18 @@ create table hs_role
 drop table if exists hs_role_user;
 create table hs_role_user
 (
-	user_id bigint(20) not null unsigned comment '用户id',
-	role_id	bigint(20) not null unsigned comment '角色id',
+	user_id bigint(20) unsigned not null  comment '用户id',
+	role_id	bigint(20) unsigned not null  comment '角色id'
 ) engine=InnoDB;
 
 -- -----------------------------------------------------
--- 用户角色中间表
+-- 用户角色项目中间表
 -- -----------------------------------------------------
 drop table if exists hs_role_project;
 create table hs_role_project
 (
-	user_id bigint(20) not null unsigned comment '用户id',
-	project_id	bigint(20) not null unsigned comment '项目id',
+	user_id bigint(20) unsigned not null  comment '用户id',
+	project_id	bigint(20) unsigned not null  comment '项目id',
 ) engine=InnoDB;
 
 -- -----------------------------------------------------

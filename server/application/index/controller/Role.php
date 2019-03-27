@@ -93,7 +93,7 @@ class Role
             return json(['msg' => '该角色名称已经存在， 新增角色失败.','code' => 500]);
         }
 
-        $data['ct_user'] = Session::get('user_info')['uname'];
+        $data['ct_user'] = Session::get('user_info')['username'];
 
 //	    if(empty($data['selected'])){
 //            return json(['data'=>'','code'=>1,'msg'=>'请选择权限']);
@@ -153,7 +153,7 @@ class Role
             return json(['msg' => '该角色名称已经存在， 新增角色失败.','code' => 500]);
         }
 
-        $data['mfy_user'] = Session::get('user_info')['uname'];
+        $data['mfy_user'] = Session::get('user_info')['username'];
         unset($data['mfy_time']);
 
 //        if(empty($data['selected'])){

@@ -538,7 +538,7 @@
 [ 2019-03-11T14:11:03+08:00 ] 127.0.0.1 GET www.job.com/api/communication/list?resume_id=6908&_d=1552284663112
 [ sql ] [ DB ] CONNECT:[ UseTime:0.046002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.011001s ]
-[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`uname` WHERE  `resume_id` = 6908 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`username` WHERE  `resume_id` = 6908 [ RunTime:0.049003s ]
 ---------------------------------------------------------------
 [ 2019-03-11T14:43:24+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
 [ sql ] [ DB ] CONNECT:[ UseTime:0.042002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8

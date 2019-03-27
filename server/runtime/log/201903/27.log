@@ -1,0 +1,124 @@
+---------------------------------------------------------------
+[ 2019-03-27T15:21:26+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T15:21:28+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T15:21:36+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T15:21:42+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T15:39:51+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004538s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.004058s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.007057s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '83459627e874b8282eca927f08985aeba0cdb45b041dda201edd35bbad4c4282'  WHERE  `id` = 1 [ RunTime:0.013097s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:40:40+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016166s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.024356s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.006217s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '52edc2a1711c053b278e1ee1f0523969c8eb9157193fa73049739452ee86b4f5'  WHERE  `id` = 1 [ RunTime:0.013842s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:42:23+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006993s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003316s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.005612s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = 'bbe2b39e76e7cf39e62cd5ed640ea81abbb9df687c3fe489ff049dfc5aa38d9c'  WHERE  `id` = 1 [ RunTime:0.013072s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:43:40+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006196s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003105s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.036227s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '3dddacb1fec87567ad46bdfa36261ba852af8a48d718371cc71b6e0b66210c66'  WHERE  `id` = 1 [ RunTime:0.012886s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:44:06+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004319s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003742s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.006354s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = 'eeddc72cc8303c2194527b029d97b845105a8a3c3d05e20c2b99b6bf285d472b'  WHERE  `id` = 1 [ RunTime:0.014976s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:44:49+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067775s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.010018s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '72058ce80b7aec973d99139c632473201d2ed0fcd1f1b0c6ff0ea81982c2a9ec'  WHERE  `id` = 1 [ RunTime:0.018082s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:45:50+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023740s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.002879s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.005471s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '20b1e3f4177877343af1d8a4b8a88366d4453f81f5ee98f95ec53a60cb45b166'  WHERE  `id` = 1 [ RunTime:0.031922s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:46:36+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003597s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.005898s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.005576s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = 'bc01a66fffee108fe8d2d99741339e5c184ad6c9878f4362eb93f70b4d5782be'  WHERE  `id` = 1 [ RunTime:0.026188s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:47:13+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003544s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003158s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.007575s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = 'a00344921d7330596ccdb682f229d8cf47d75f18312c32d5e7a1a9c10b68f8a6'  WHERE  `id` = 1 [ RunTime:0.015191s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:48:51+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005512s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003182s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.005526s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '25d6b5f78f81bf6c05bf1dc466ee7ade0f21dbf7aa688f3ab891596979766d89'  WHERE  `id` = 1 [ RunTime:0.014082s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:48:59+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006468s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.005645s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = '3b442bbc08bca6a8b35878e582caef8910d09f5e51c44b2a43cfb614822866af'  WHERE  `id` = 1 [ RunTime:0.013497s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:50:38+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673038954
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006703s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003922s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.005306s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:50:42+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673042665
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004180s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004044s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.007701s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:50:48+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673048395
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006180s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.005017s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.008118s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:05+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673125172
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004724s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004282s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.004959s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:13+08:00 ] 127.0.0.1 POST 127.0.0.1:9777/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004890s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003575s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.008827s ]
+[ sql ] [ SQL ] UPDATE `hs_user`  SET `token` = 'bbc2f01950b3cbfe976fe8f07c7222fd5d11387017b66774d190eb3c906e8b33'  WHERE  `id` = 1 [ RunTime:0.017678s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:14+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673134491
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003935s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.005723s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.005253s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:32+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673152786
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009306s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004166s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.007027s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:37+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673157369
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007486s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004549s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.006603s ]
+---------------------------------------------------------------
+[ 2019-03-27T15:52:42+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553673162872
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004934s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003071s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.022203s ]

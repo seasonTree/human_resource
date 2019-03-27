@@ -2,15 +2,17 @@
     <div class="login-container">
 
         <el-form ref="form" :model="form" class="login-form">
-            <div class="login-title">人事管理系统</div>
-            <el-input v-model.trim="form.username" placeholder="请输入用户名" auto-complete="off"></el-input>
-            <el-input @keyup.native.enter="submitHandler" v-model.trim="form.password" type="password" placeholder="请输入用户密码" autocomplete="off"></el-input>
+            <div class="login-title">{{title}}</div>
+            <el-input :disabled="loading" v-model.trim="form.username" placeholder="请输入用户名" auto-complete="off"></el-input>
+            <el-input :disabled="loading" @keyup.native.enter="submitHandler" v-model.trim="form.password" type="password" placeholder="请输入用户密码" autocomplete="off"></el-input>
             <el-button type="primary" :loading="loading" @click="submitHandler">登录</el-button>
         </el-form>
     </div>
 </template>
 
 <script>
+import config from '../config/base';
+
 export default {
     name: "login",
 
@@ -21,7 +23,9 @@ export default {
                 password: ""
             },
 
-            loading: false
+            loading: false,
+
+            title: config.title            
         };
     },
 

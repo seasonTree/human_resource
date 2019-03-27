@@ -2,7 +2,7 @@
 [ 2019-03-25T10:35:17+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2019-02-01&dtto=2019-02-28&_d=1553481313206
 [ sql ] [ DB ] CONNECT:[ UseTime:3.023173s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.030002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.031001s ]
@@ -23,7 +23,7 @@
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'chunning' ) [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'test' ) [ RunTime:0.026001s ]
 ---------------------------------------------------------------
-[ 2019-03-25T10:40:37+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=Jessica&dtfm=2019-02-01&dtto=2019-02-28&_d=1553481637744
+[ 2019-03-25T10:40:37+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=Jessica&dtfm=2019-02-01&dtto=2019-02-28&_d=1553481637744
 [ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.003000s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2019-02-01' and '2019-02-28' and a.ct_user = 'Jessica' ) ORDER BY `communicate_time` DESC [ RunTime:0.053004s ]
@@ -31,7 +31,7 @@
 [ 2019-03-25T10:46:32+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553481962085
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.029002s ]
@@ -863,7 +863,7 @@
 [ 2019-03-25T10:47:11+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553482001524
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.026001s ]
@@ -1635,7 +1635,7 @@
 [ 2019-03-25T10:48:04+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553482083581
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.025002s ]
@@ -1659,14 +1659,14 @@
 [ 2019-03-25T10:56:53+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553482613440
 [ sql ] [ DB ] CONNECT:[ UseTime:0.031001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025002s ]
 [ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'ct_user' in field list is ambiguous
 ---------------------------------------------------------------
 [ 2019-03-25T10:57:42+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553482661862
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and a.ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and a.ct_user = 'Eleanor' ) [ RunTime:0.026001s ]
@@ -1690,7 +1690,7 @@
 [ 2019-03-25T11:00:00+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553482799307
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.014001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.033001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.027001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and a.ct_user = 'admin' ) [ RunTime:0.033002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-02-01' and '2019-02-28' and a.ct_user = 'Eleanor' ) [ RunTime:0.031002s ]
@@ -1714,7 +1714,7 @@
 [ 2019-03-25T11:00:12+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-12-01&dtto=2019-03-31&_d=1553482811700
 [ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.034002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.030002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-12-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.032002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-12-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.033002s ]
@@ -1738,14 +1738,14 @@
 [ 2019-03-25T11:00:33+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-12-01&dtto=2019-03-31&_d=1553482832839
 [ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.031002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.095006s ]
 [ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'ct_user' in where clause is ambiguous
 ---------------------------------------------------------------
 [ 2019-03-25T11:02:43+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-12-01&dtto=2019-03-31&_d=1553482962910
 [ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.028001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.028002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-12-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.030001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-12-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.030002s ]
@@ -1769,7 +1769,7 @@
 [ 2019-03-25T11:10:53+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483451911
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.032001s ]
@@ -1793,14 +1793,14 @@
 [ 2019-03-25T11:11:02+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=Tiffany&_d=1553483458290
 [ sql ] [ DB ] CONNECT:[ UseTime:3.808218s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('Tiffany') ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('Tiffany') ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Tiffany' and a.ct_user in('Tiffany') ) [ RunTime:0.032002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T11:11:09+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=Tiffany,tingting&_d=1553483469609
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('Tiffany','tingting') ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('Tiffany','tingting') ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Tiffany' and a.ct_user in('Tiffany','tingting') ) [ RunTime:0.032002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'tingting' and a.ct_user in('Tiffany','tingting') ) [ RunTime:0.010001s ]
@@ -1808,21 +1808,21 @@
 [ 2019-03-25T11:11:16+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=tingting&_d=1553483473026
 [ sql ] [ DB ] CONNECT:[ UseTime:3.017173s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('tingting') ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('tingting') ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'tingting' and a.ct_user in('tingting') ) [ RunTime:0.032002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T11:11:16+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=tingting&_d=1553483474773
 [ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('tingting') ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('tingting') ) [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'tingting' and a.ct_user in('tingting') ) [ RunTime:0.033002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T11:11:22+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483482013
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.028001s ]
@@ -1846,7 +1846,7 @@
 [ 2019-03-25T11:11:33+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483490432
 [ sql ] [ DB ] CONNECT:[ UseTime:2.210126s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.030002s ]
@@ -1877,7 +1877,7 @@
 [ 2019-03-25T11:15:36+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483735424
 [ sql ] [ DB ] CONNECT:[ UseTime:0.440025s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.027001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.029002s ]
@@ -1901,7 +1901,7 @@
 [ 2019-03-25T11:15:50+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483749303
 [ sql ] [ DB ] CONNECT:[ UseTime:0.494028s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.026001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.029002s ]
@@ -1925,7 +1925,7 @@
 [ 2019-03-25T11:15:51+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553483750213
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.027001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027001s ]
@@ -1963,7 +1963,7 @@
 [ 2019-03-25T11:35:27+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553484926239
 [ sql ] [ DB ] CONNECT:[ UseTime:0.765044s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.032002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027002s ]
@@ -1987,7 +1987,7 @@
 [ 2019-03-25T11:35:33+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553484933145
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027002s ]
@@ -2011,7 +2011,7 @@
 [ 2019-03-25T15:10:03+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553497798058
 [ sql ] [ DB ] CONNECT:[ UseTime:3.109178s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.008000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.030001s ]
@@ -2049,7 +2049,7 @@
 [ 2019-03-25T15:10:36+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553497835585
 [ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027001s ]
@@ -2073,7 +2073,7 @@
 [ 2019-03-25T15:10:44+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553497840978
 [ sql ] [ DB ] CONNECT:[ UseTime:3.016173s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027002s ]
@@ -2094,27 +2094,27 @@
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'chunning' ) [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'test' ) [ RunTime:0.003000s ]
 ---------------------------------------------------------------
-[ 2019-03-25T15:11:47+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=Jessica&dtfm=2018-09-01&dtto=2019-03-31&_d=1553497907524
+[ 2019-03-25T15:11:47+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=Jessica&dtfm=2018-09-01&dtto=2019-03-31&_d=1553497907524
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004001s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2018-09-01' and '2019-03-31' and a.ct_user = 'Jessica' ) ORDER BY `communicate_time` DESC [ RunTime:0.035002s ]
 ---------------------------------------------------------------
-[ 2019-03-25T15:19:31+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=Tina&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498371760
+[ 2019-03-25T15:19:31+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=Tina&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498371760
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2018-09-01' and '2019-03-31' and a.ct_user = 'Tina' ) ORDER BY `communicate_time` DESC [ RunTime:0.031002s ]
 ---------------------------------------------------------------
-[ 2019-03-25T15:23:03+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=Kitty&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498583563
+[ 2019-03-25T15:23:03+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=Kitty&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498583563
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2018-09-01' and '2019-03-31' and a.ct_user = 'Kitty' ) ORDER BY `communicate_time` DESC [ RunTime:0.030001s ]
 ---------------------------------------------------------------
-[ 2019-03-25T15:25:19+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=test&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498719398
+[ 2019-03-25T15:25:19+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=test&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498719398
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2018-09-01' and '2019-03-31' and a.ct_user = 'test' ) ORDER BY `communicate_time` DESC [ RunTime:0.024001s ]
 ---------------------------------------------------------------
-[ 2019-03-25T15:25:32+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_uname?uname=Jason&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498728882
+[ 2019-03-25T15:25:32+08:00 ] 127.0.0.1 GET www.job.com/api/communication/get_by_username?username=Jason&dtfm=2018-09-01&dtto=2019-03-31&_d=1553498728882
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `a`.`communicate_time`,`a`.`content`,`b`.`name` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( communicate_time between '2018-09-01' and '2019-03-31' and a.ct_user = 'Jason' ) ORDER BY `communicate_time` DESC [ RunTime:3.852220s ]
@@ -2122,28 +2122,28 @@
 [ 2019-03-25T15:26:27+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=Jessica&_d=1553498783566
 [ sql ] [ DB ] CONNECT:[ UseTime:3.830220s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.041002s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('Jessica') ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('Jessica') ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Jessica' and a.ct_user in('Jessica') ) [ RunTime:0.037002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T15:26:34+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=admin&_d=1553498793911
 [ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('admin') ) [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('admin') ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' and a.ct_user in('admin') ) [ RunTime:0.027001s ]
 ---------------------------------------------------------------
 [ 2019-03-25T15:26:34+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=admin&_d=1553498794730
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('admin') ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('admin') ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' and a.ct_user in('admin') ) [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T15:26:41+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=admin,Eleanor&_d=1553498797782
 [ sql ] [ DB ] CONNECT:[ UseTime:3.222184s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('admin','Eleanor') ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('admin','Eleanor') ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.028001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' and a.ct_user in('admin','Eleanor') ) [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' and a.ct_user in('admin','Eleanor') ) [ RunTime:0.029002s ]
@@ -2151,7 +2151,7 @@
 [ 2019-03-25T15:26:45+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=admin,Eleanor,Sayaka,Jessica&_d=1553498805681
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('admin','Eleanor','Sayaka','Jessica') ) [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('admin','Eleanor','Sayaka','Jessica') ) [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' and a.ct_user in('admin','Eleanor','Sayaka','Jessica') ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' and a.ct_user in('admin','Eleanor','Sayaka','Jessica') ) [ RunTime:0.029002s ]
@@ -2161,7 +2161,7 @@
 [ 2019-03-25T15:26:56+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&ur=admin,Eleanor,Sayaka,Jessica,tingting,xiangjing&_d=1553498812206
 [ sql ] [ DB ] CONNECT:[ UseTime:3.467198s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( uname in('admin','Eleanor','Sayaka','Jessica','tingting','xiangjing') ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( username in('admin','Eleanor','Sayaka','Jessica','tingting','xiangjing') ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' and a.ct_user in('admin','Eleanor','Sayaka','Jessica','tingting','xiangjing') ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' and a.ct_user in('admin','Eleanor','Sayaka','Jessica','tingting','xiangjing') ) [ RunTime:0.030002s ]
@@ -2173,7 +2173,7 @@
 [ 2019-03-25T15:27:23+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553498836728
 [ sql ] [ DB ] CONNECT:[ UseTime:0.838048s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.025001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.028001s ]
@@ -2197,7 +2197,7 @@
 [ 2019-03-25T15:27:24+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_total?dtfm=2018-09-01&dtto=2019-03-31&_d=1553498843985
 [ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.016000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027001s ]
@@ -2221,7 +2221,7 @@
 [ 2019-03-25T15:28:59+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2018-09-01&dtto=2019-03-31&_d=1553498934282
 [ sql ] [ DB ] CONNECT:[ UseTime:3.581205s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.308018s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2018-09-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027002s ]
@@ -2245,7 +2245,7 @@
 [ 2019-03-25T15:44:44+08:00 ] 127.0.0.1 GET www.job.com/api/user/list?pageIndex=1&pageSize=10&_d=1553499882188
 [ sql ] [ DB ] CONNECT:[ UseTime:2.018116s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_user` LIMIT 1 [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-25T15:44:46+08:00 ] 127.0.0.1 GET www.job.com/api/role/list?pageIndex=1&pageSize=10&_d=1553499886371
@@ -2257,7 +2257,7 @@
 [ 2019-03-25T16:02:22+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1553500941324
 [ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T16:02:22+08:00 ] 127.0.0.1 GET www.job.com/api/role/get_user_by_id?role_id=1&_d=1553500941324
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
@@ -2322,7 +2322,7 @@
 [ 2019-03-25T16:41:50+08:00 ] 127.0.0.1 GET www.job.com/api/user/list?pageIndex=1&pageSize=10&_d=1553503310282
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` LIMIT 0,10 [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `rs_user` LIMIT 1 [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-25T16:41:57+08:00 ] 127.0.0.1 GET www.job.com/api/role/list?pageIndex=1&pageSize=10&_d=1553503312986
@@ -2364,12 +2364,12 @@
 [ 2019-03-25T17:21:02+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1553505662078
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-25T17:21:12+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-03-01&dtto=2019-03-31&_d=1553505668608
 [ sql ] [ DB ] CONNECT:[ UseTime:3.000172s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007000s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.027001s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-03-01' and '2019-03-31' and a.ct_user = 'admin' ) [ RunTime:0.026002s ]
 [ sql ] [ SQL ] SELECT `b`.`name`,`screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`a`.`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` `a` INNER JOIN `rs_resume` `b` ON `a`.`resume_id`=`b`.`id` WHERE  ( date(communicate_time) between '2019-03-01' and '2019-03-31' and a.ct_user = 'Eleanor' ) [ RunTime:0.027001s ]

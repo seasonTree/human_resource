@@ -10,6 +10,9 @@ const outputPath = path.resolve(__dirname, '../dist');
 const copyFile = require('copy-webpack-plugin');
 const env = process.env.NODE_ENV;
 const resourcePrfix = '';
+const config = require('../src/config/base');
+
+console.log(config);
 
 
 //如果dist文件不存在就创建
@@ -55,6 +58,7 @@ let plugins = [
     }),
 
     new htmlPlugin({
+        title: config.title,
         filename: `${outputPath}/index.html`,
         template: `${srcPath}/index.html`,
         inject: 'body',

@@ -2,17 +2,17 @@
 [ 2019-03-20T11:21:27+08:00 ] 127.0.0.1 POST www.job.com/api/user/login
 [ sql ] [ DB ] CONNECT:[ UseTime:1.771101s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.021002s ]
-[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.046002s ]
 ---------------------------------------------------------------
 [ 2019-03-20T11:21:30+08:00 ] 127.0.0.1 POST www.job.com/api/user/login
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.016001s ]
-[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.049003s ]
 ---------------------------------------------------------------
 [ 2019-03-20T11:23:09+08:00 ] 127.0.0.1 POST www.job.com/api/user/login
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `rs_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.023002s ]
 [ sql ] [ SQL ] UPDATE `rs_user`  SET `token` = 'e9d4b8c46c6f4fd2d228478dbfe1b0415a9ddf48b5732ca22bde69e55e8964f9'  WHERE  `id` = 1 [ RunTime:0.052003s ]
 ---------------------------------------------------------------
 [ 2019-03-20T11:23:10+08:00 ] 127.0.0.1 GET www.job.com/api/user/get_user_permission?_d=1553052190551
@@ -161,14 +161,14 @@
 [ 2019-03-20T14:52:58+08:00 ] 127.0.0.1 GET www.job.com/api/user/all_list?_d=1553064778852
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `id`,`uname`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-20T14:53:30+08:00 ] 127.0.0.1 GET www.job.com/api/report/person_recru/recruitment_list?dtfm=2019-02-01&dtto=2019-02-28&_d=1553064794079
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.082004s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.025001s ]
@@ -687,7 +687,7 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`name`,`phone`,`email`,`school`,`educational`,`graduation_time`,`work_year`,`source`,`ct_user`,`ct_time`,`company_type`,`expected_job` FROM `rs_resume` WHERE  ( 1=1 ) [ RunTime:0.084005s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006001s ]
-[ sql ] [ SQL ] SELECT `uname`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username`,`personal_name`,`ct_user` FROM `rs_user` WHERE  ( 1=1 ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-02-28' and ct_user = 'admin' ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] SELECT `screen`,`arrange_interview`,`arrive`,`approved_interview`,`entry`,`ct_user`,`resume_id`,`communicate_time` FROM `rs_communicate` WHERE  ( communicate_time between '2019-02-01' and '2019-02-28' and ct_user = 'Eleanor' ) [ RunTime:0.025001s ]
@@ -1533,7 +1533,7 @@
 [ 2019-03-20T18:39:48+08:00 ] 127.0.0.1 GET www.job.com/api/communication/list?resume_id=3733&_d=1553078388548
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.007000s ]
-[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`uname` WHERE  `resume_id` = 3733 ORDER BY `communicate_time` DESC [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`username` WHERE  `resume_id` = 3733 ORDER BY `communicate_time` DESC [ RunTime:0.031002s ]
 ---------------------------------------------------------------
 [ 2019-03-20T18:40:00+08:00 ] 127.0.0.1 POST www.job.com/api/resume/del
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
@@ -1553,7 +1553,7 @@
 [ 2019-03-20T18:47:58+08:00 ] 127.0.0.1 GET www.job.com/api/communication/list?resume_id=464&_d=1553078877493
 [ sql ] [ DB ] CONNECT:[ UseTime:0.530030s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`uname` WHERE  `resume_id` = 464 ORDER BY `communicate_time` DESC [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`username` WHERE  `resume_id` = 464 ORDER BY `communicate_time` DESC [ RunTime:0.026001s ]
 ---------------------------------------------------------------
 [ 2019-03-20T18:47:59+08:00 ] 127.0.0.1 GET www.job.com/api/client/get_all?_d=1553078879682
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
@@ -1576,7 +1576,7 @@
 [ 2019-03-20T19:06:31+08:00 ] 127.0.0.1 GET www.job.com/api/communication/list?resume_id=464&_d=1553079990995
 [ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_communicate` [ RunTime:0.022001s ]
-[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`uname` WHERE  `resume_id` = 464 ORDER BY `communicate_time` DESC [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`personal_name` FROM `rs_communicate` `a` INNER JOIN `rs_user` `b` ON `a`.`ct_user`=`b`.`username` WHERE  `resume_id` = 464 ORDER BY `communicate_time` DESC [ RunTime:0.026002s ]
 ---------------------------------------------------------------
 [ 2019-03-20T19:06:32+08:00 ] 127.0.0.1 GET www.job.com/api/client/get_all?_d=1553079992491
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8

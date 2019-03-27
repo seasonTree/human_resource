@@ -53,7 +53,7 @@ class Index extends Controller
 
            $resume = new Resume();
            $communicate = new Communicate();
-           $ct_user = Session::get('user_info')['uname'];
+           $ct_user = Session::get('user_info')['username'];
            $total = [];//汇总集合
            $person = [];//个人集合
            $total_comm = [];//沟通综合

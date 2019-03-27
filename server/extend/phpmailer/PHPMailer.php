@@ -209,7 +209,7 @@ class PHPMailer
     /**
      * The hostname to use in the Message-ID header and as default HELO string.
      * If empty, PHPMailer attempts to find one with, in order,
-     * $_SERVER['SERVER_NAME'], gethostname(), php_uname('n'), or the value
+     * $_SERVER['SERVER_NAME'], gethostname(), php_username('n'), or the value
      * 'localhost.localdomain'.
      *
      * @var string
@@ -3575,8 +3575,8 @@ class PHPMailer
             $result = $_SERVER['SERVER_NAME'];
         } elseif (function_exists('gethostname') and gethostname() !== false) {
             $result = gethostname();
-        } elseif (php_uname('n') !== false) {
-            $result = php_uname('n');
+        } elseif (php_username('n') !== false) {
+            $result = php_username('n');
         }
         if (!static::isValidHost($result)) {
             return 'localhost.localdomain';

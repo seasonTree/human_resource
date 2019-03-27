@@ -187,7 +187,7 @@ export function del(data){
  *          msg: '提示信息',
  *          data: {
  *              id: 1,
- *              uname: '用户名',
+ *              username: '用户名',
  *          }
  *      }
  */

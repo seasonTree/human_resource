@@ -31,7 +31,7 @@ class Privilege extends Controller
             return json(['data'=>'','code'=>1,'msg'=>$error]);
         }
 
-        $data['mfy_user'] = Session::get('user_info')['uname'];
+        $data['mfy_user'] = Session::get('user_info')['username'];
 
         try{
             $id =$priModel->edit($data);
@@ -58,7 +58,7 @@ class Privilege extends Controller
              return json(['data'=>'','code'=>1,'msg'=>$error]);
         }
 
-        $data['ct_user'] = Session::get('user_info')['uname'];
+        $data['ct_user'] = Session::get('user_info')['username'];
 
         try{
             $resData =model('Privilege')->add($data);
@@ -87,7 +87,7 @@ class Privilege extends Controller
             return json(['msg' => '排序成功.','code' => 0]);
         }
         $model =model('Privilege');
-        $mfy_user = Session::get('user_info')['uname'];
+        $mfy_user = Session::get('user_info')['username'];
 
         foreach($data as $k => $v){
             $re_sort['id'] = $v;

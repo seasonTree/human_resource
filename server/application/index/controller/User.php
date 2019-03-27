@@ -59,7 +59,7 @@ class User
         $name = isset($data['name'])?trim($data['name']):'';
         
         if($name != '') {
-            $where['uname'] = $name;
+            $where['username'] = $name;
         }
 
         $data = model('User')->lstPage($data['pageIndex'],$data['pageSize'], $where);
@@ -79,7 +79,7 @@ class User
             return json(['msg' => '参数错误.','code' => 500]);
         }
 
-        $data['mfy_user'] = Session::get('user_info')['uname'];
+        $data['mfy_user'] = Session::get('user_info')['username'];
         unset($data['mfy_time']);
         $id=model('User')->edit($data);
         if($id){
@@ -99,13 +99,13 @@ class User
             return json(['msg' => '两次输入的密码不一致， 新增用户失败.','code' => 500]);
         }
         
-        $udata = model('User')->getOne(['uname'=>$data['uname']]);
+        $udata = model('User')->getOne(['username'=>$data['username']]);
 
         if($udata){
             return json(['msg' => '存在重复的用户名， 新增用户失败.','code' => 500]);
         }
 
-        if(!checkUser($data['uname'])){
+        if(!checkUser($data['username'])){
             return json(['msg' => '用户名长度为2到16字符， 新增用户失败.','code' => 500]);
         }
 
@@ -114,7 +114,7 @@ class User
         }
 
 
-        $data['ct_user'] = Session::get('user_info')['uname'];
+        $data['ct_user'] = Session::get('user_info')['username'];
         $data['passwd'] = hash('sha256',$data['passwd']);
         $id=model('User')->add($data);
         
@@ -133,7 +133,7 @@ class User
     public function changeStatus(){
         $data = input('post.');
 
-        $data['mfy_user'] = Session::get('user_info')['uname'];
+        $data['mfy_user'] = Session::get('user_info')['username'];
         unset($data['mfy_time']);
 
         if(model('User')->edit($data)){
@@ -149,7 +149,7 @@ class User
         $data['passwd'] = hash('sha256',$data['passwd']);
 
         unset($data['mfy_time']);
-        $data['mfy_user'] = Session::get('user_info')['uname'];
+        $data['mfy_user'] = Session::get('user_info')['username'];
 
         if(model('User')->edit($data)){
 

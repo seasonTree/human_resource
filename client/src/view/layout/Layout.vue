@@ -12,14 +12,14 @@
                         class="header title"
                         v-show="showNav"
                     >
-                        招聘管理系统
+                        {{title}}
                     </el-header>
 
                     <el-header
                         class="header title small-title"
                         v-show="!showNav"
                     >
-                        招
+                        {{simple_title}}
                     </el-header>
 
                     <div class="navbar">
@@ -64,7 +64,7 @@
                                         backgroundImage: `url(${userInfo.avatar})`
                                     }"
                                 ></span>
-                                <span class="inline-block">{{userInfo.userid}}</span>
+                                <span class="inline-block">{{userInfo.username}}</span>
                             </span>
                             <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item @click.native="changePasswordDialog = true">
@@ -141,7 +141,7 @@
                                 backgroundImage: `url(${userInfo.avatar})`
                             }"
                         ></span>
-                        <span class="inline-block">{{userInfo.uname}}</span>
+                        <span class="inline-block">{{userInfo.username}}</span>
                     </span>
                     <el-dropdown-menu slot="dropdown">
                         <el-dropdown-item @click.native="changePasswordDialog = true">
@@ -218,6 +218,7 @@ import MenuTree from "@component/menutree/MenuTree";
 import ChangePassword from "./ChangePassword";
 import UserImage from "./UserImage";
 import { mapGetters } from "vuex";
+import config from '../../config/base';
 
 export default {
     name: "Layout",
@@ -296,7 +297,10 @@ export default {
             userImageDialog: false,
 
             navWidth: "200px",
-            showNav: true
+            showNav: true,
+
+            title: config.title,
+            simple_title: config.simple_title
         };
     },
 

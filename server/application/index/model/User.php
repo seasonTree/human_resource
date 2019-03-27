@@ -19,7 +19,7 @@ class User extends Model
 
     public function getUser($where){
         //获取用户名
-        return User::where($where)->value('uname');
+        return User::where($where)->value('username');
     }
 
     public function getUserName($where){
@@ -34,10 +34,10 @@ class User extends Model
 
     public function getUserInfo($where = '1=1'){
         //获取部分字段
-        return User::field('uname,personal_name,ct_user')->where($where)->select()->toArray();
+        return User::field('username,personal_name,ct_user')->where($where)->select()->toArray();
     }
     public function lst(){
-        return $this->field('id,uname,personal_name,phone,ct_user,ct_time,status,mfy_time')->select()->toArray();
+        return $this->field('id,username,personal_name,phone,ct_user,ct_time,status,mfy_time')->select()->toArray();
     }
     public function updateToken($data){
         return User::where(['id' => $data['id']])->update(['token' => $data['token']]);
@@ -49,7 +49,7 @@ class User extends Model
         }
         $offset = ($pageIndex - 1) * $pageSize;
 
-        $limitData = $this->field('id,uname,personal_name,phone,ct_user,ct_time,status,mfy_time')->limit($offset, $pageSize)->where($where)->select();
+        $limitData = $this->field('id,username,personal_name,phone,ct_user,ct_time,status,mfy_time')->limit($offset, $pageSize)->where($where)->select();
         $count = $this->where($where)->count();
         // $pageCount = ceil($count / $pageSize);
         $data = [

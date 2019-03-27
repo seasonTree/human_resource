@@ -11,12 +11,12 @@
 [ 2019-03-14T10:26:56+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:27:03+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.028002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.032002s ]
 [ error ] [2]array_search() expects parameter 2 to be array, string given
@@ -24,7 +24,7 @@
 [ 2019-03-14T10:27:36+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.028002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552530456admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552530456admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552530456admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552530456admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552530456admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552530456admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552530456admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552530456admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.047002s ]
@@ -33,68 +33,68 @@
 [ 2019-03-14T10:28:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:29:39+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:30:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.020001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:30:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:31:42+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.003000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.026001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:39:13+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:39:26+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.037002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.070004s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.010000s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:40:41+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:45:54+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T10:46:26+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552531586admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552531586admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552531586admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552531586admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552531586admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552531586admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552531586admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552531586admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.048003s ]
@@ -103,7 +103,7 @@
 [ 2019-03-14T10:48:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552531712admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552531712admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552531712admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552531712admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552531712admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552531712admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552531712admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552531712admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.044003s ]
@@ -112,14 +112,14 @@
 [ 2019-03-14T10:49:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.031002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:05:54+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552532754admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552532754admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552532754admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552532754admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552532754admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552532754admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552532754admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552532754admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046003s ]
@@ -128,7 +128,7 @@
 [ 2019-03-14T11:09:33+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.008001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552532972admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552532972admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552532972admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552532972admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552532972admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552532972admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552532972admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552532972admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.048003s ]
@@ -137,33 +137,33 @@
 [ 2019-03-14T11:15:06+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.024001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.041003s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.019001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.026002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:16:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:17:10+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.040003s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.016001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.064004s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:18:05+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.076004s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.076004s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:21:18+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.027001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','1','15073186571','23456789@qq.com','武汉东湖学院','大专','2014','3','前程无忧','1552533677admin','沟通内容1',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552533677admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552533677admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552533677admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552533677admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552533677admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','8','13554731416','23456796@qq.com','黑龙江大学','大专','2014','4','前程无忧','1552533677admin','沟通内容8','沟通内容88','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552533677admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046002s ]
@@ -172,7 +172,7 @@
 [ 2019-03-14T11:22:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023002s ]
 [ error ] [8]未定义数组下标: 0
@@ -180,21 +180,21 @@
 [ 2019-03-14T11:23:42+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.026001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:25:33+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:25:58+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552533957admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552533957admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552533957admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552533957admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552533957admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552533957admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552533957admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.048002s ]
@@ -204,14 +204,14 @@
 [ 2019-03-14T11:35:16+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.032002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.048002s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.034002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:36:38+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.048002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.019002s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.030001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.031002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534598admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534598admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534598admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534598admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534598admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534598admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534598admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.029002s ]
@@ -223,7 +223,7 @@
 [ 2019-03-14T11:36:57+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.010000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.026001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534616admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534616admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534616admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534616admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534616admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534616admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534616admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.048003s ]
@@ -235,14 +235,14 @@
 [ 2019-03-14T11:37:30+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.046002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.028002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:37:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.040002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.013001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.028002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.053003s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534666admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534666admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534666admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534666admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534666admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534666admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534666admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.083005s ]
@@ -254,7 +254,7 @@
 [ 2019-03-14T11:38:24+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.031002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.024002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534704admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534704admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534704admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534704admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534704admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534704admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534704admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.052003s ]
@@ -262,7 +262,7 @@
 [ 2019-03-14T11:38:56+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.020001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.011000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.040003s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534735admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534735admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534735admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534735admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534735admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534735admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534735admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.053003s ]
@@ -271,7 +271,7 @@
 [ 2019-03-14T11:43:14+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.030002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.023001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552534994admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552534994admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552534994admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552534994admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552534994admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552534994admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552534994admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046002s ]
@@ -283,7 +283,7 @@
 [ 2019-03-14T11:44:42+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552535082admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552535082admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552535082admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552535082admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552535082admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552535082admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552535082admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.046003s ]
@@ -295,21 +295,21 @@
 [ 2019-03-14T11:46:05+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.021002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.009000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.058003s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:47:58+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:53:00+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552535579admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552535579admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552535579admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552535579admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552535579admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552535579admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552535579admin','沟通内容9','沟通内容99','乐钦' ) [ RunTime:0.044003s ]
@@ -324,45 +324,45 @@
 [ 2019-03-14T11:55:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:55:49+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:57:02+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:57:29+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T11:58:28+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.043002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.012001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.055003s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.075005s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898) ) [ RunTime:0.010000s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:00:14+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:00:17+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.032002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552536017admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.056003s ]
@@ -371,35 +371,35 @@
 [ 2019-03-14T12:01:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:01:35+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:03:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.027002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:04:04+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.023002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:07:21+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.003001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.029001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.039002s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.036002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552536441admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.045003s ]
@@ -408,7 +408,7 @@
 [ 2019-03-14T12:07:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.013000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552536467admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.045003s ]
@@ -417,21 +417,21 @@
 [ 2019-03-14T12:08:01+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:10:01+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.035002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T12:10:25+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552536625admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.042003s ]
@@ -439,7 +439,7 @@
 [ 2019-03-14T12:12:24+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552536743admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.042003s ]
@@ -454,19 +454,19 @@
 [ 2019-03-14T13:45:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.015001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:45:54+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.010000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.044003s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:46:03+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.060003s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.008001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.059003s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.011001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.038002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552542363admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.051003s ]
@@ -481,19 +481,19 @@
 [ 2019-03-14T13:46:46+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.018001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.028001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:46:48+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.063003s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.014001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.014000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.042003s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:46:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.030002s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.007000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.029002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552542412admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.043002s ]
@@ -508,78 +508,78 @@
 [ 2019-03-14T13:48:23+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.027002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:48:26+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.009001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:48:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.028001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.025002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:49:23+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.024001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:51:15+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,' at line 1
 ---------------------------------------------------------------
 [ 2019-03-14T13:53:47+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:58:27+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.006001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.030001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:58:45+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:59:38+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:59:46+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:59:51+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T13:59:53+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.024001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007001s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552543193admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.043002s ]
@@ -594,38 +594,38 @@
 [ 2019-03-14T14:01:16+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:01:32+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.025001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:01:40+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.008000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:21:25+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.005001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.027001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.004000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646) ) [ RunTime:0.025002s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:23:11+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:23:14+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.003000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.005000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646,34567) ) [ RunTime:0.022001s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514937600,'2018-01-03','java','11','34567','23456799@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552544594admin','沟通内容999999','沟通内容999999','乐钦' ) [ RunTime:0.042002s ]
@@ -640,12 +640,12 @@
 [ 2019-03-14T14:25:59+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004001s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:26:23+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.023002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646,34567) ) [ RunTime:0.025002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514736000,'2018.01.01','测试','2','1234567891','23456790@qq.com','湖南农业大学','本科','2014','3','前程无忧','1552544783admin','沟通内容2',NULL,'顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','3','1234567892','23456791@qq.com','湘潭职业技术学院','大专','2010','4','前程无忧','1552544783admin','沟通内容3','沟通内容33','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','测试','4','1234567893','23456792@qq.com','北京理工大学珠海学院','本科','2014','3.5','智联招聘','1552544783admin','沟通内容4','沟通内容44','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','5','1234567894','23456793@qq.com','河南工业大学','本科','2015','3','前程无忧','1552544783admin','沟通内容5','沟通内容55','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','6','1234567895','23456794@qq.com','惠州学院','大专','2014','2','前程无忧','1552544783admin','沟通内容6','沟通内容66','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','前端','7','1234567896','23456795@qq.com','广东青年职业学院','大专','2014','3.5','前程无忧','1552544783admin','沟通内容7','沟通内容77','顺丰' ) , ( '吴梦',1514736000,'2018.01.01','java','9','1234567898','23456797@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552544783admin','沟通内容9','沟通内容99','乐钦' ) , ( '吴梦',1514822400,'2018.01.02','java','10','556644646','23456798@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552544783admin','沟通内容10','沟通内容100','乐钦' ) [ RunTime:0.048003s ]
@@ -660,12 +660,12 @@
 [ 2019-03-14T14:26:52+08:00 ] 127.0.0.1 POST www.job.com/api/resume/upload_excel
 [ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.003000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.022001s ]
 ---------------------------------------------------------------
 [ 2019-03-14T14:26:54+08:00 ] 127.0.0.1 POST www.job.com/api/resume/batch_add
 [ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=192.168.199.134;port=3306;dbname=test_resume;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_user` [ RunTime:0.004000s ]
-[ sql ] [ SQL ] SELECT `uname` FROM `rs_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT `username` FROM `rs_user` [ RunTime:0.028002s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `rs_resume` [ RunTime:0.007000s ]
 [ sql ] [ SQL ] SELECT `id`,`phone` FROM `rs_resume` WHERE  ( phone in(15073186571,1234567891,1234567892,1234567893,1234567894,1234567895,1234567896,13554731416,1234567898,556644646,34567) ) [ RunTime:0.022002s ]
 [ sql ] [ SQL ] INSERT INTO `rs_resume` (`ct_user` , `ct_timestamp` , `ct_time` , `expected_job` , `name` , `phone` , `email` , `school` , `educational` , `graduation_time` , `work_year` , `source` , `batch_id` , `custom1` , `custom2` , `company_type`) VALUES ( '吴梦',1514937600,'2018-01-03','java','11','34567','23456799@qq.com','中央广播电视大学','大专','2013','6','前程无忧','1552544814admin','沟通内容999999','沟通内容999999','乐钦' ) [ RunTime:0.042002s ]

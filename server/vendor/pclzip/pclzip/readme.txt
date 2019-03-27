@@ -213,7 +213,7 @@
     - Add better support for windows paths (thanks for help from manus@manusfreedom.com).
     - Corrected bug : When the archive file already exists with size=0, the add() method
       fails. Corrected in 2.0.
-    - Remove the use of OS_WINDOWS constant. Use php_uname() function rather.
+    - Remove the use of OS_WINDOWS constant. Use php_username() function rather.
     - Control the order of index ranges in extract by index feature.
     - Change the internal management of folders (better handling of internal flag).
 

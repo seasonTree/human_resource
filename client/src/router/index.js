@@ -318,7 +318,7 @@ router.beforeEach(async (to, from, next) => {
 
     //获取当前登录的用户
     let user = store.getters.userInfo;
-    if (!user.uname) {
+    if (!user.username) {
         let checkError = false;
 
         //加载loading
@@ -353,7 +353,7 @@ router.beforeEach(async (to, from, next) => {
     }
 
     //初始化路由成功后,如果当前用户没有登录的话，跳到登录
-    if (user.uname) {
+    if (user.username) {
         //初始化菜单------------------------
 
         if (!initRouter) {
