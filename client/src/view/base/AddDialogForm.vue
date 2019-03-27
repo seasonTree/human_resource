@@ -47,7 +47,7 @@ export default {
                                 that.closeDialog();
                             } else {
                                 that.$message.error(
-                                    res.message ||
+                                    res.msg ||
                                         "新增失败，请重试."
                                 );
                             }

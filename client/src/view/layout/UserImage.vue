@@ -122,7 +122,7 @@ export default {
 
                         that.closeDialog();
                     } else {
-                        that.$message.error(res.message);
+                        that.$message.error(res.msg);
                     }
 
                     that.commitLoading = false;

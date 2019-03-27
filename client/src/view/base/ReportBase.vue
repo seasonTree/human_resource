@@ -83,7 +83,7 @@ export default {
                         }
                     } else {
                         that.$message.error(
-                            res.message || "获取数据失败，请刷新后重试."
+                            res.msg || "获取数据失败，请刷新后重试."
                         );
                     }
 
