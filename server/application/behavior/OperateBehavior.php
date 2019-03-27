@@ -85,6 +85,7 @@ class OperateBehavior extends Controller
                 echo json_encode(['code' => 403,'msg' => '请先登录']);exit;
             }
         }
+
         if ($userid != 1) {
             //超级管理员跳权限
 
