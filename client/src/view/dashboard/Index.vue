@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        欢迎 {{userInfo.userid}} .
+        欢迎 {{userInfo.username}} .
 
     </div>
 </template>
@@ -18,7 +18,7 @@ export default {
     },
 
     computed: {
-        // ...mapGetters(["userInfo"])
+        ...mapGetters(["userInfo"])
     },
 
     methods: {
