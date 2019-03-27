@@ -185,3 +185,64 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.003787s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003430s ]
 [ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.005207s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:07:13+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553674033848
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016533s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004019s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.006872s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:08:51+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T16:08:52+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/
+[ error ] [0]模板文件不存在:/home/john/workspace/human_resource/client/dist/index.html
+---------------------------------------------------------------
+[ 2019-03-27T16:09:57+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553674197470
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083648s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003925s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.005716s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:16:56+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553674616418
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013226s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.004543s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.009359s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:16:58+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/list?pageIndex=1&pageSize=10&_d=1553674618303
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005341s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003383s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `hs_user` LIMIT 0,10 [ RunTime:0.006442s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_user` LIMIT 1 [ RunTime:0.006495s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:16:59+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/role/list?pageIndex=1&pageSize=10&_d=1553674619075
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003390s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_role` [ RunTime:0.002867s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_role` LIMIT 0,10 [ RunTime:0.007185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_role` LIMIT 1 [ RunTime:0.004794s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:16:59+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/permission/list?_d=1553674619874
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007520s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003635s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` ORDER BY `idx` ASC,`id` ASC [ RunTime:0.006714s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:17:00+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/role/list?pageIndex=1&pageSize=10&_d=1553674620373
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004032s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_role` [ RunTime:0.003760s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_role` LIMIT 0,10 [ RunTime:0.006393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_role` LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:17:00+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/list?pageIndex=1&pageSize=10&_d=1553674620731
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007739s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `hs_user` LIMIT 0,10 [ RunTime:0.006233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_user` LIMIT 1 [ RunTime:0.005095s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:17:02+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/get_user_permission?_d=1553674622340
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003982s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_permission` [ RunTime:0.003810s ]
+[ sql ] [ SQL ] SELECT * FROM `hs_permission` [ RunTime:0.008465s ]
+---------------------------------------------------------------
+[ 2019-03-27T16:17:02+08:00 ] 127.0.0.1 GET 127.0.0.1:9777/api/user/list?pageIndex=1&pageSize=10&_d=1553674622495
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004690s ] mysql:host=192.168.199.134;port=3306;dbname=human_resource;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hs_user` [ RunTime:0.003527s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`personal_name`,`phone`,`ct_user`,`ct_time`,`status`,`mfy_time` FROM `hs_user` LIMIT 0,10 [ RunTime:0.006337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hs_user` LIMIT 1 [ RunTime:0.004668s ]

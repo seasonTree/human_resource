@@ -99,8 +99,8 @@ create table hs_role_project
 -- -----------------------------------------------------
 -- 用户权限
 -- -----------------------------------------------------
-drop table if exists rs_permission;
-create table rs_permission
+drop table if exists hs_permission;
+create table hs_permission
 (
 	id bigint(20) unsigned auto_increment primary key comment '自增id',
 	parent_id bigint(20) not null default 0 comment '父的id',
@@ -118,11 +118,38 @@ create table rs_permission
 	mfy_time datetime default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP not null comment '修改时间'	
 ) engine=InnoDB;
 
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (1, 0, '用户管理', 0, 'fa fa-users', '', '', '/user', '', 19, '', '2018-12-14 14:22:11', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (2, 1, '用户信息', 0, 'fa fa-user-friends', '/user/index', '', '/user/Index', '', 20, '', '2018-12-14 14:23:25', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (3, 1, '用户角色', 0, 'fa fa-users-cog', '/user/role', '', '/role/Index', '', 30, '', '2018-12-14 14:24:07', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (4, 1, '用户权限', 0, 'fa fa-user-shield', '/user/permission', '', '/permission/Index', '', 40, '', '2018-12-14 14:24:29', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (5, 2, '查看用户列表', 1, '', '', 'user_list', '', '/api/user/list', 21, '', '2018-12-14 14:26:32', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (6, 2, '新增用户', 1, '', '', 'user_add', '', '/api/user/add', 22, '', '2018-12-14 14:27:10', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (7, 2, '修改用户', 1, '', '', 'user_edit', '', '/api/user/edit', 24, '', '2018-12-14 14:27:38', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (8, 2, '删除用户', 1, '', '', 'user_del', '', '/api/user/del', 25, '', '2018-12-14 14:28:07', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (9, 2, '修改用户密码', 1, '', '', 'user_change_pass', '', '/api/user/change_user_passwd', 26, '', '2018-12-14 14:29:02', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (10, 2, '修改用户状态', 1, '', '', 'user_change_status', '', '/api/user/change_status', 27, '', '2018-12-14 14:30:01', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (11, 3, '查看角色列表', 1, '', '', 'role_list', '', '/api/role/list', 31, '', '2018-12-14 14:32:09', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (12, 2, '查看用户单条记录(修改)', 1, '', '', 'user_get_row', '', '/api/user/get_by_id', 23, '', '2018-12-14 14:33:04', 'admin', '2018-12-27 15:20:03');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (13, 3, '获取角色单条数据(修改)', 1, '', '', 'role_get_row', '', '/api/role/get_by_id', 33, '', '2018-12-14 14:33:51', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (14, 3, '新增角色', 1, '', '', 'role_add', '', '/api/role/add', 32, '', '2018-12-14 14:34:22', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (15, 3, '角色修改', 1, '', '', 'role_edit', '', '/api/role/edit', 34, '', '2018-12-14 14:34:56', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (16, 3, '角色删除', 1, '', '', 'role_del', '', '/api/role/del', 35, '', '2018-12-14 14:35:47', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (17, 3, '设置角色用户', 1, '', '', 'role_user_set', '', '/api/role/set_role_user', 37, '', '2018-12-14 14:44:37', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (18, 3, '设置角色权限', 1, '', '', 'role_permiss_set', '', '/api/role/set_role_permission', 39, '', '2018-12-14 14:46:00', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (19, 3, '获取当前角色的权限(设置使用)', 1, '', '', 'role_permiss_get', '', '/api/role/get_check_permission', 38, '', '2018-12-14 14:47:16', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (20, 3, '获取当前角色的用户列表(设置使用)', 1, '', '', 'role_user_list', '', '/api/role/get_user_by_id', 36, '', '2018-12-14 14:47:56', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (21, 4, '获取权限列表', 1, '', '', 'permiss_list', '', '/api/permission/list', 41, '', '2018-12-14 14:49:12', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (22, 4, '获取权限单条记录(修改)', 1, '', '', 'permiss_get_row', '', '/api/permission/get_by_id', 43, '', '2018-12-14 14:49:55', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (23, 4, '权限新增', 1, '', '', 'permiss_add', '', '/api/permission/add', 42, '', '2018-12-14 14:50:44', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (24, 4, '权限修改', 1, '', '', 'permiss_edit', '', '/api/permission/edit', 44, '', '2018-12-14 14:51:28', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (25, 4, '权限删除', 1, '', '', 'permiss_del', '', '/api/permission/del', 45, '', '2018-12-14 14:52:51', 'admin', '2019-01-05 20:45:58');
+INSERT INTO human_resource.hs_permission (id, parent_id, p_name, p_type, p_icon, url, p_act_name, p_component, api, idx, ct_user, ct_time, mfy_user, mfy_time) VALUES (26, 4, '权限排序', 1, '', '', 'permiss_sort', '', '/api/permission/sort', 46, '', '2018-12-14 14:53:22', 'admin', '2019-01-05 20:45:58');
+
 -- -----------------------------------------------------
 -- 角色权限
 -- -----------------------------------------------------
-drop table if exists rs_role_permission;
-create table rs_role_permission
+drop table if exists hs_role_permission;
+create table hs_role_permission
 (
 	role_id bigint(20) unsigned not null comment '角色id',
 	p_id  bigint(20) unsigned not null comment '权限id'	
