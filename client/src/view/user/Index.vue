@@ -45,7 +45,7 @@
                 ></el-table-column>
 
                 <el-table-column
-                    prop="uname"
+                    prop="username"
                     label="用户名"
                 ></el-table-column>
 
@@ -236,7 +236,7 @@ export default {
             tdata: [
                 // {
                 //     id: 1,
-                //     uname: "123",
+                //     username: "123",
                 //     personal_name: "aaaaa",
                 //     phone: 128154444,
                 //     status: 0,
@@ -247,7 +247,7 @@ export default {
                 // },
                 //  {
                 //     id: 1,
-                //     uname: "123",
+                //     username: "123",
                 //     personal_name: "aaaaa",
                 //     phone: 128154444,
                 //     status: 1,
