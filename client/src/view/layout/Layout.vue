@@ -299,7 +299,7 @@ export default {
             navWidth: "200px",
             showNav: true,
 
-            title: config.title,
+            title: config.dash_title,
             simple_title: config.simple_title
         };
     },
@@ -344,7 +344,7 @@ export default {
         //     that.userAvatar = `url(${data})`;
         // },
 
-        handleFullScreen() {
+           handleFullScreen() {
             let isFullscreen =
                     document.fullScreen ||
                     document.mozFullScreen ||

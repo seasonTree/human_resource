@@ -12,9 +12,6 @@ const env = process.env.NODE_ENV;
 const resourcePrfix = '';
 const config = require('../src/config/base');
 
-console.log(config);
-
-
 //如果dist文件不存在就创建
 try {
     fs.statSync(outputPath);
